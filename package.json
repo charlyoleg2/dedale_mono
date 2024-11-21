@@ -1,0 +1,55 @@
+{
+	"name": "dedale_mono",
+	"version": "0.1.0",
+	"description": "The mono-repo for an experimental hono-svelte-app",
+	"private": true,
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/charlyoleg2/dedale_mono.git"
+	},
+	"homepage": "https://charlyoleg2.github.io/dedale_mono/",
+	"author": "charlyoleg2",
+	"license": "ISC",
+	"keywords": [
+		"crud",
+		"micro-services",
+		"backend",
+		"rpc",
+		"svelte",
+		"hono",
+		"zod"
+	],
+	"type": "module",
+	"workspaces": [
+		"pkg/*"
+	],
+	"scripts": {
+		"nF:dev": "npm -w nF run dev",
+		"nF:ci": "npm -w nF run ci",
+		"nF:clean": "npm -w nF run clean",
+		"nF:version": "npm -w nF version patch",
+		"dev": "run-p nW:dev nF:dev dedalex:dev",
+		"ci-hono": "run-s nF:ci nW:ci",
+		"ci-svelte": "run-s dyn:ci stat:ci",
+		"ci": "run-s ci-hono ci-svelte apidoc",
+		"clean-root": "rimraf tmp output output2 build",
+		"clean-hono": "run-s nF:clean nW:clean",
+		"clean-svelte": "run-s dyn:clean stat:clean",
+		"clean": "run-s clean-root clean-hono clean-svelte",
+		"preview": "run-s dyn:preview",
+		"versions": "run-s nF:version nW:version dyn:version stat:version",
+		"gen_apidoc": "typedoc",
+		"cp_apidoc": "fse copy build/apidoc pkg/stat/build/docs/apidoc",
+		"apidoc": "run-s gen_apidoc cp_apidoc",
+		"serve_apidoc": "serve build/apidoc",
+		"serve_dedales": "serve pkg/stat/build",
+		"ls-pkg": "ls -la pkg"
+	},
+	"devDependencies": {
+		"@atao60/fse-cli": "^0.1.9",
+		"npm-run-all2": "^7.0.1",
+		"rimraf": "^6.0.1",
+		"serve": "^14.2.4",
+		"typedoc": "^0.26.11"
+	}
+}

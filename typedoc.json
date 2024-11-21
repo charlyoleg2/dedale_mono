@@ -1,0 +1,11 @@
+{
+	"entryPoints": ["pkg/nF", "pkg/nW"],
+	"name": "Dedale ecosystem",
+	"entryPointStrategy": "packages",
+	"out": "build/apidoc",
+	"navigationLinks": {
+		"Dadale sources": "https://github.com/charlyoleg2/dedale_mono",
+		"Dedales static instance": "https://charlyoleg2.github.io/dedale_mono/"
+	},
+	"includeVersion": false
+}

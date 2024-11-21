@@ -1,0 +1,4 @@
+# .gitignore of dedale_mono
+node_modules/
+output/
+build/
