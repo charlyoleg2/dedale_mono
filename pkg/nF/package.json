@@ -2,7 +2,10 @@
   "name": "nF",
   "type": "module",
   "scripts": {
-    "dev": "tsx watch src/index.ts"
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "ci": "run-s build",
+    "clean": "rimraf"
   },
   "dependencies": {
     "@hono/node-server": "^1.13.7",
@@ -10,6 +13,8 @@
   },
   "devDependencies": {
     "@types/node": "^20.11.17",
+	"npm-run-all2": "^7.0.1",
+	"rimraf": "^6.0.1",
     "tsx": "^4.7.1"
   }
 }
