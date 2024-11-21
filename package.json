@@ -26,6 +26,7 @@
 	"scripts": {
 		"nF:dev": "npm -w nF run dev",
 		"nF:ci": "npm -w nF run ci",
+		"nF:run": "npm -w nF run run",
 		"nF:clean": "npm -w nF run clean",
 		"nF:version": "npm -w nF version patch",
 		"dev": "run-p nW:dev nF:dev dedalex:dev",
@@ -36,6 +37,7 @@
 		"clean-hono": "run-s nF:clean nW:clean",
 		"clean-svelte": "run-s dedalex:clean dedales:clean",
 		"clean": "run-s clean-root clean-hono clean-svelte",
+		"test_nF": "scr/test_nF.sh",
 		"preview": "run-s dedalex:preview",
 		"versions": "run-s nF:version nW:version dedalex:version dedales:version",
 		"gen_apidoc": "typedoc",
