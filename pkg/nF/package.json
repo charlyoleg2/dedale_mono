@@ -5,7 +5,7 @@
     "dev": "tsx watch src/index.ts",
     "build": "tsc",
     "ci": "run-s build",
-    "clean": "rimraf"
+    "clean": "rimraf build node_modules"
   },
   "dependencies": {
     "@hono/node-server": "^1.13.7",
