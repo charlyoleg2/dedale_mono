@@ -11,14 +11,14 @@ const route = app
 	})
 	.get('/what',
 		 //zValidator('query', z.object({ name: z.string().optional() }).optional()),
-		 zValidator('query', z.object({ name: z.string().optional() })),
+		 zValidator('query', z.object({ name: z.string() })),
 		 (c) => {
 		const query = c.req.valid('query');
 		//console.log(query);
-		const name = query.name ? query.name : "blouf";
+		//const name = query.name ? query.name : "blouf";
 		return c.json({
 				ok: true,
-				msg: `What ${name}`
+				msg: `What ${query.name}`
 			},
 			200);
 	});
