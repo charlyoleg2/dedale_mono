@@ -27,7 +27,7 @@
 		"build": "tsc",
 		"pretty": "prettier --check .",
 		"format": "prettier --write .",
-		"ci": "run-s build",
+		"ci": "run-s build pretty",
 		"run": "node build/index.js",
 		"clean": "rimraf build node_modules"
 	},
