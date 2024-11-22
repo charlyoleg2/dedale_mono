@@ -7,18 +7,18 @@ const clientnW = hc<AppType>('http://localhost:3010/');
 const app = new Hono();
 
 app.get('/', (c) => {
-  return c.text('Hello Hono!')
+	return c.text('Hello Hono!');
 }).get('/two', async (c) => {
-	const res = await clientnW.what.$get({ query: { name: 'gogo'}});
+	const res = await clientnW.what.$get({ query: { name: 'gogo' } });
 	const resp = await res.json();
 	//console.log(resp);
-  return c.text(resp.msg);
+	return c.text(resp.msg);
 });
 
 const port = 3000;
 console.log(`Server is running on http://localhost:${port}`);
 
 serve({
-  fetch: app.fetch,
-  port
+	fetch: app.fetch,
+	port
 });

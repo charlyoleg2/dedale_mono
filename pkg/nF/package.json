@@ -1,22 +1,48 @@
 {
-  "name": "nF",
-  "type": "module",
-  "scripts": {
-    "dev": "tsx watch src/index.ts",
-    "build": "tsc",
-    "ci": "run-s build",
-    "run": "node build/index.js",
-    "clean": "rimraf build node_modules"
-  },
-  "dependencies": {
-	"nW": "^0.1.0",
-    "@hono/node-server": "^1.13.7",
-    "hono": "^4.6.11"
-  },
-  "devDependencies": {
-    "@types/node": "^20.11.17",
-	"npm-run-all2": "^7.0.1",
-	"rimraf": "^6.0.1",
-    "tsx": "^4.7.1"
-  }
+	"name": "nF",
+	"version": "0.1.2",
+	"description": "The micro-service front-entry-point of Dedale",
+	"private": true,
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/charlyoleg2/dedale_mono.git"
+	},
+	"homepage": "https://charlyoleg2.github.io/dedale_mono/",
+	"author": "charlyoleg",
+	"license": "ISC",
+	"keywords": [
+		"micro-service",
+		"hono",
+		"zod"
+	],
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "./build/index.d.ts",
+			"default": "./build/index.js"
+		}
+	},
+	"scripts": {
+		"dev": "tsx watch src/index.ts",
+		"build": "tsc",
+		"pretty": "prettier --check .",
+		"format": "prettier --write .",
+		"ci": "run-s build pretty",
+		"run": "node build/index.js",
+		"clean": "rimraf build node_modules"
+	},
+	"dependencies": {
+		"@hono/node-server": "^1.13.7",
+		"@hono/zod-validator": "^0.4.1",
+		"hono": "^4.6.11",
+		"nW": "^0.1.0",
+		"zod": "^3.23.8"
+	},
+	"devDependencies": {
+		"@types/node": "^20.11.17",
+		"npm-run-all2": "^7.0.1",
+		"prettier": "^3.3.3",
+		"rimraf": "^6.0.1",
+		"tsx": "^4.7.1"
+	}
 }
