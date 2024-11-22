@@ -51,6 +51,7 @@
 		"apidoc": "run-s gen_apidoc cp_apidoc",
 		"serve_apidoc": "serve build/apidoc",
 		"serve_dedales": "serve pkg/dedales/build",
+		"ls-workspaces": "npm -ws exec -c pwd",
 		"ls-pkg": "ls -la pkg"
 	},
 	"devDependencies": {

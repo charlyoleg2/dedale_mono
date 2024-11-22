@@ -9,6 +9,7 @@
     "clean": "rimraf build node_modules"
   },
   "dependencies": {
+	"nW": "^0.1.0",
     "@hono/node-server": "^1.13.7",
     "hono": "^4.6.11"
   },
