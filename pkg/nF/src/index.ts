@@ -8,6 +8,7 @@ import { addi } from 'nW';
 const clientnW = hc<nWType>('http://localhost:3010/');
 const app = new Hono();
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const route = app
 	.get('/', (c) => {
 		return c.text('Hello Hono!');
