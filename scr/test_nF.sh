@@ -4,6 +4,7 @@
 
 curl -w "\n" http://localhost:3000
 curl -w "\n" http://localhost:3000/two
+curl -w "\n" http://localhost:3000/addi
 
 #wget -S -qO- http://localhost:3000/two
 echo -e "\nend of test_nF.sh"
