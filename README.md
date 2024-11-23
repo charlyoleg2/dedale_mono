@@ -26,7 +26,7 @@ Prerequisite
 ------------
 
 - [node](https://nodejs.org) version 20.10.0 or higher
-- [npm](https://docs.npmjs.com/cli/latest/commands/npm) version 10.2.4 or higher
+- [npm](https://docs.npmjs.com/cli/v10/commands/npm) version 10.2.4 or higher
 
 
 Develop Dedale
