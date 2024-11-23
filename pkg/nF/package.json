@@ -1,6 +1,6 @@
 {
 	"name": "nF",
-	"version": "0.1.2",
+	"version": "0.1.3",
 	"description": "The micro-service front-entry-point of Dedale",
 	"private": true,
 	"repository": {
