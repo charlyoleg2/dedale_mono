@@ -11,6 +11,7 @@ function addi(aOne: number): number {
 
 const app = new Hono();
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const route = app
 	.get('/', (c) => {
 		return c.text('Hello Hono!');

@@ -27,7 +27,10 @@
 		"build": "tsc",
 		"pretty": "prettier --check .",
 		"format": "prettier --write .",
-		"ci": "run-s build pretty",
+		"lint": "eslint .",
+		"test:unit": "vitest",
+		"test:unit:once": "vitest --run",
+		"ci": "run-s build pretty lint test:unit:once",
 		"run": "node build/index.js",
 		"clean": "rimraf build node_modules"
 	},
@@ -39,10 +42,17 @@
 		"zod": "^3.23.8"
 	},
 	"devDependencies": {
-		"@types/node": "^20.11.17",
+		"@eslint/js": "^9.15.0",
+		"@types/eslint__js": "^8.42.3",
+		"@types/node": "^20.17.6",
+		"eslint": "^9.15.0",
+		"eslint-config-prettier": "^9.1.0",
 		"npm-run-all2": "^7.0.1",
 		"prettier": "^3.3.3",
 		"rimraf": "^6.0.1",
-		"tsx": "^4.7.1"
+		"tsx": "^4.7.1",
+		"typescript": "^5.7.2",
+		"typescript-eslint": "^8.15.0",
+		"vitest": "^2.1.5"
 	}
 }
