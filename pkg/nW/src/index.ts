@@ -37,7 +37,7 @@ const route = app
 		return c.json(
 			{
 				ok: true,
-				msg: `5 + ${query.num.toString()} = ${addi(query.num).toString()}`
+				msg: `5 + ${query.num} = ${addi(query.num)}`
 			},
 			200
 		);
