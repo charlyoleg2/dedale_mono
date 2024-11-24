@@ -20,7 +20,7 @@ const route = app
 		return c.text(resp.msg);
 	})
 	.get('/addi', async (c) => {
-		const res = await clientnW.addi.$get({ query: { num: '12' } });
+		const res = await clientnW.addi.$get({ query: { num: 12 } });
 		const resp = await res.json();
 		//console.log(resp);
 		const toto = addi(3).toString();
