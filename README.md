@@ -50,13 +50,12 @@ npm -w dedalep run build
 npm run dev
 ```
 
-Hono backend documentation
---------------------------
+Using the backends
+------------------
 
 - Exported functions are documented with [TypeDoc](https://charlyoleg2.github.io/dedale_mono/docs/apidoc/)
 - Rest-API is document with [OpenAPI](http://localhost:3010/doc)
 - The backend Rest-API can be tested/experimented with:
-
 	- [curl](https://curl.se/)
 	- [wget](https://www.gnu.org/software/wget/manual/html_node/index.html)
 	- [Restfox](https://restfox.dev/)
