@@ -1,5 +1,7 @@
 import { serve } from '@hono/node-server';
 import { Hono } from 'hono';
+import { z } from 'zod';
+import { zValidator } from '@hono/zod-validator';
 import { hc } from 'hono/client';
 import esMain from 'es-main';
 import type { nWType } from 'nW';
@@ -13,24 +15,29 @@ const route = app
 	.get('/', (c) => {
 		return c.text('Hello Hono!');
 	})
-	.get('/two', async (c) => {
-		const res = await clientnW.what.$get({ query: { name: 'gogo' } });
+	.get('/two', zValidator('query', z.object({ nama: z.string() })), async (c) => {
+		const query = c.req.valid('query');
+		const res = await clientnW.what.$get({ query: { name: query.nama } });
 		const resp = await res.json();
 		//console.log(resp);
 		return c.text(resp.msg);
 	})
-	.get('/addi', async (c) => {
-		const res = await clientnW.addi.$get({ query: { num: 12 } });
-		const resp = await res.json();
-		//console.log(resp);
-		const toto = addi(3).toString();
-		return c.text(resp.msg + '   ' + toto);
-	});
-
-const port = 3000;
-console.log(`Server is running on http://localhost:${port}`);
+	.get(
+		'/addi',
+		zValidator('query', z.object({ numa: z.number({ coerce: true }).int() })),
+		async (c) => {
+			const query = c.req.valid('query');
+			const res = await clientnW.addi.$get({ query: { num: query.numa } });
+			const resp = await res.json();
+			//console.log(resp);
+			const toto = addi(3).toString();
+			return c.text(resp.msg + '   ' + toto);
+		}
+	);
 
 if (esMain(import.meta)) {
+	const port = 3000;
+	console.log(`Server is running on http://localhost:${port}`);
 	serve({
 		fetch: app.fetch,
 		port

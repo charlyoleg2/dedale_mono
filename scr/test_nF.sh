@@ -3,8 +3,8 @@
 #set -x
 
 curl -w "\n" http://localhost:3000
-curl -w "\n" http://localhost:3000/two
-curl -w "\n" http://localhost:3000/addi
+curl -w "\n" http://localhost:3000/two?nama="bobo"
+curl -w "\n" http://localhost:3000/addi?numa="20"
 
 #wget -S -qO- http://localhost:3000/two
 echo -e "\nend of test_nF.sh"
