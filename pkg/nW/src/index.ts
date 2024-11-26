@@ -1,7 +1,9 @@
 import { serve } from '@hono/node-server';
 //import { Hono } from 'hono';
-import { z, createRoute, OpenAPIHono } from '@hono/zod-openapi';
+//import { z } from 'zod';
 //import { zValidator } from '@hono/zod-validator';
+import { z, createRoute, OpenAPIHono } from '@hono/zod-openapi';
+import { swaggerUI } from '@hono/swagger-ui';
 import esMain from 'es-main';
 
 function addi(aOne: number): number {
@@ -103,7 +105,8 @@ const routeForType = app
 			);
 		}
 	);
-
+// swagger-ui
+app.get('/swagger', swaggerUI({ url: '/doc' }));
 // The OpenAPI documentation will be available at /doc
 app.doc('/doc', {
 	openapi: '3.0.0',
