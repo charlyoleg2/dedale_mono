@@ -20,7 +20,7 @@
 		"@atao60/fse-cli": "^0.1.9",
 		"@sveltejs/adapter-auto": "^3.3.1",
 		"@sveltejs/adapter-node": "^5.2.9",
-		"@sveltejs/kit": "^2.8.4",
+		"@sveltejs/kit": "^2.8.5",
 		"@sveltejs/vite-plugin-svelte": "^4.0.2",
 		"eslint": "^9.15.0",
 		"eslint-config-prettier": "^9.1.0",
