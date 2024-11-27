@@ -53,8 +53,9 @@ npm run dev
 Using the backends
 ------------------
 
-- Exported functions are documented with [TypeDoc](https://charlyoleg2.github.io/dedale_mono/docs/apidoc/)
-- Rest-API is documented with [OpenAPI](http://localhost:3010/doc) and can be tried with [swagger-ui](http://localhost:3010/swagger)
+Exported functions are documented with [TypeDoc](https://charlyoleg2.github.io/dedale_mono/docs/apidoc/).
+
+Rest-API is documented with [OpenAPI](http://localhost:3010/doc) and can be tried with [swagger-ui](http://localhost:3010/swagger).
 
 The backend Rest-API can also be tested/experimented with external tools like:
 - [curl](https://curl.se/)
