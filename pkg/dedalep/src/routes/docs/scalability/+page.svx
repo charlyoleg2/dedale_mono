@@ -12,18 +12,51 @@ category: documentation
 
 ## Hardware issue
 
-![hardware_processing.svg]({base}/svg/hardware_processing.svg)
-![hardware_processing_limitation.svg]({base}/svg/hardware_processing_limitation.svg)
-![hardware_processing_distributed.svg]({base}/svg/hardware_processing_distributed.svg)
+<figure>
+	<img src="{base}/svg/hardware_processing.svg" alt="hardware_processing.svg" />
+	<figcaption>Hardware processing unit</figcaption>
+</figure>
+<figure>
+	<img src="{base}/svg/hardware_processing_limitation.svg" alt="hardware_processing_limitation.svg" />
+	<figcaption>Hardware processing limitation</figcaption>
+</figure>
+<figure>
+	<img src="{base}/svg/hardware_processing_distributed.svg" alt="hardware_processing_distributed.svg" />
+	<figcaption>Distributed hardware processing</figcaption>
+</figure>
 
 
 ## Distributed processing
 
-![software_scaling.svg]({base}/svg/software_scaling.svg)
-![distributed_backend.svg]({base}/svg/distributed_backend.svg)
-![raspberry_rack.jpg]({base}/jpg/raspberry_rack.jpg)
+<figure>
+	<img src="{base}/svg/software_scaling.svg" alt="software_scaling.svg" />
+	<figcaption>How software can scale?</figcaption>
+</figure>
+<figure>
+	<img src="{base}/svg/distributed_backend.svg" alt="distributed_backend.svg" />
+	<figcaption>An example of distributed backend</figcaption>
+</figure>
+<figure>
+	<img src="{base}/jpg/raspberry_rack.jpg" alt="" raspberry_rack.jpg/>
+	<figcaption>A rack of RaspberryPi</figcaption>
+</figure>
 
 
 ## Page processing
 
-![page_processing.svg]({base}/svg/page_processing.svg)
+<figure>
+	<img src="{base}/svg/page_processing.svg" alt="page_processing.svg" />
+	<figcaption>Options for page processing</figcaption>
+</figure>
+
+<style>
+	figure {
+		display: inline-block;
+		margin: 3rem;
+	}
+	figure > figcaption {
+		font-style: italic;
+		text-align: center;
+	}
+
+</style>
