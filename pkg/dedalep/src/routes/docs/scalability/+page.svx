@@ -10,7 +10,7 @@ category: documentation
 
 # {title}
 
-## Hardware problematic
+## Hardware issue
 
 ![hardware_processing.svg]({base}/svg/hardware_processing.svg)
 ![hardware_processing_limitation.svg]({base}/svg/hardware_processing_limitation.svg)
@@ -21,7 +21,7 @@ category: documentation
 
 ![software_scaling.svg]({base}/svg/software_scaling.svg)
 ![distributed_backend.svg]({base}/svg/distributed_backend.svg)
-![raspberry_rack.jpg](./raspberry_rack.jpg)
+![raspberry_rack.jpg]({base}/jpg/raspberry_rack.jpg)
 
 
 ## Page processing
