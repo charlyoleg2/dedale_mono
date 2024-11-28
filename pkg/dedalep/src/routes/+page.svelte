@@ -7,7 +7,7 @@
 
 <h2>Documentation</h2>
 <ol>
-	<li><a href="{base}/docs/scalability/">Software scalability</a></li>
+	<li><a href="{base}/docs/scalability">Software scalability</a></li>
 	<li><a href="{base}/docs/apidoc/" rel="external">TypeDoc</a></li>
 </ol>
 
