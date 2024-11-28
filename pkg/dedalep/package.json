@@ -15,7 +15,7 @@
 		"ci": "run-s svgo build lint check test:unit:once",
 		"svgo": "svgo --config ./svgo.config.js -f src/routes/docs/svg -o static/svg",
 		"github-pages-fix": "touch build/.nojekyll",
-		"clean": "rimraf .svelte-kit build node_modules static/pgdsvg"
+		"clean": "rimraf .svelte-kit build node_modules static/svg"
 	},
 	"devDependencies": {
 		"@atao60/fse-cli": "^0.1.9",

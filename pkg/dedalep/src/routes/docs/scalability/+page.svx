@@ -12,15 +12,15 @@ category: documentation
 
 ## Hardware problematic
 
-![hardware_processing.svg](./hardware_processing.svg)
-![hardware_processing_limitation.svg](./hardware_processing_limitation.svg)
-![hardware_processing_distributed.svg](./hardware_processing_distributed.svg)
+![hardware_processing.svg]({base}/svg/hardware_processing.svg)
+![hardware_processing_limitation.svg]({base}/svg/hardware_processing_limitation.svg)
+![hardware_processing_distributed.svg]({base}/svg/hardware_processing_distributed.svg)
 
 
 ## Distributed processing
 
-![software_scaling.svg](./software_scaling.svg)
-![distributed_backend.svg](./distributed_backend.svg)
+![software_scaling.svg]({base}/svg/software_scaling.svg)
+![distributed_backend.svg]({base}/svg/distributed_backend.svg)
 ![raspberry_rack.jpg](./raspberry_rack.jpg)
 
 
