@@ -7,6 +7,49 @@ import esMain from 'es-main';
 import type { nWType } from 'nW';
 import { addi } from 'nW';
 
+interface tPerson {
+	name: string;
+	age: number;
+	lieu: string;
+}
+
+const mydb: tPerson[] = [
+	{
+		name: 'thierry',
+		age: 678,
+		lieu: 'geneve'
+	},
+	{
+		name: 'joseph',
+		age: 21,
+		lieu: 'caen'
+	},
+	{
+		name: 'paul',
+		age: 51,
+		lieu: 'bordeau'
+	}
+];
+
+function db_list_name(): string[] {
+	const rList: string[] = [];
+	for (const obj of mydb) {
+		rList.push(obj.name);
+	}
+	return rList;
+}
+function db_read_person(name: string): tPerson {
+	const rPerson: tPerson = { name: 'toto', age: 0, lieu: 'nirvana' };
+	for (const obj of mydb) {
+		if (obj.name === name) {
+			rPerson.name = obj.name;
+			rPerson.age = obj.age;
+			rPerson.lieu = obj.lieu;
+		}
+	}
+	return rPerson;
+}
+
 const clientnW = hc<nWType>('http://localhost:3010/');
 const app = new Hono();
 
@@ -33,7 +76,26 @@ const route = app
 			const toto = addi(3).toString();
 			return c.text(resp.msg + '   ' + toto);
 		}
-	);
+	)
+	.get('/list', async (c) => {
+		return c.json(
+			{
+				ok: true,
+				list: db_list_name()
+			},
+			200
+		);
+	})
+	.get('/product', zValidator('query', z.object({ id: z.string() })), async (c) => {
+		const query = c.req.valid('query');
+		return c.json(
+			{
+				ok: true,
+				product: db_read_person(query.id)
+			},
+			200
+		);
+	});
 
 if (esMain(import.meta)) {
 	const port = 3000;
