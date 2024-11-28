@@ -48,6 +48,18 @@ category: documentation
 	<img src="{base}/svg/page_processing.svg" alt="page_processing.svg" />
 	<figcaption>Options for page processing</figcaption>
 </figure>
+<figure>
+	<img src="{base}/svg/sequence_ssg.svg" alt="sequence_ssg.svg" />
+	<figcaption>Server Side Generation</figcaption>
+</figure>
+<figure>
+	<img src="{base}/svg/sequence_ssr.svg" alt="sequence_ssr.svg" />
+	<figcaption>Server Side Rendering</figcaption>
+</figure>
+<figure>
+	<img src="{base}/svg/sequence_csr.svg" alt="sequence_csr.svg" />
+	<figcaption>Client Side Rendering</figcaption>
+</figure>
 
 <style>
 	figure {
