@@ -44,10 +44,19 @@ category: documentation
 
 ## Page processing
 
+### Processing options
+
 <figure>
 	<img src="{base}/svg/page_processing.svg" alt="page_processing.svg" />
 	<figcaption>Options for page processing</figcaption>
 </figure>
+<figure>
+	<img src="{base}/svg/flow_options.svg" alt="flow_options.svg" />
+	<figcaption>Options for processing flow</figcaption>
+</figure>
+
+### Sequence diagrams
+
 <figure>
 	<img src="{base}/svg/sequence_ssg.svg" alt="sequence_ssg.svg" />
 	<figcaption>Server Side Generation</figcaption>
@@ -59,6 +68,25 @@ category: documentation
 <figure>
 	<img src="{base}/svg/sequence_csr.svg" alt="sequence_csr.svg" />
 	<figcaption>Client Side Rendering</figcaption>
+</figure>
+
+### Data flow diagrams
+
+<figure>
+	<img src="{base}/svg/flow_ssg.svg" alt="flow_ssg.svg" />
+	<figcaption>Server Side Generation</figcaption>
+</figure>
+<figure>
+	<img src="{base}/svg/flow_ssr.svg" alt="flow_ssr.svg" />
+	<figcaption>Server Side Rendering</figcaption>
+</figure>
+<figure>
+	<img src="{base}/svg/flow_csr.svg" alt="flow_csr.svg" />
+	<figcaption>Client Side Rendering with integrated node-A</figcaption>
+</figure>
+<figure>
+	<img src="{base}/svg/flow_csr2.svg" alt="flow_csr2.svg" />
+	<figcaption>Client Side Rendering with independant node-A</figcaption>
 </figure>
 
 <style>
