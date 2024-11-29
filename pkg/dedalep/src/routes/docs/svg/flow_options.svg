@@ -25,7 +25,7 @@
      inkscape:document-units="px"
      inkscape:zoom="2.2198668"
      inkscape:cx="256.77216"
-     inkscape:cy="4965.388"
+     inkscape:cy="5180.7163"
      inkscape:window-width="1854"
      inkscape:window-height="1131"
      inkscape:window-x="0"
@@ -91,7 +91,10 @@
        width="118.35451"
        height="48.98661"
        x="5.8402529"
-       y="1366.8575" />
+       y="1366.8575"
+       inkscape:export-filename="flow_options.svg"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,55.572448,18.326875)"
@@ -141,105 +144,105 @@
          y="5322.3782"
          id="tspan6">node-A integrated and node-B</tspan></text>
     <rect
-       style="fill:none;stroke:#000000;stroke-width:0.264583;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:none;stroke:#999999;stroke-width:0.264583;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect37"
        width="71.155731"
        height="9.7734842"
        x="10.011862"
        y="1402.2566" />
     <rect
-       style="fill:none;stroke:#000000;stroke-width:0.264583;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:none;stroke:#999999;stroke-width:0.264583;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect37-2"
        width="71.155731"
        height="9.7734842"
        x="10.011868"
        y="1392.4832" />
     <rect
-       style="fill:none;stroke:#000000;stroke-width:0.264583;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:none;stroke:#999999;stroke-width:0.264583;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect37-2-0"
        width="71.155731"
        height="9.7734842"
        x="10.011869"
        y="1382.7097" />
     <rect
-       style="fill:none;stroke:#000000;stroke-width:0.264583;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:none;stroke:#999999;stroke-width:0.264583;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect37-2-0-1"
        width="12.917765"
        height="9.7734842"
        x="81.167603"
        y="1382.7097" />
     <rect
-       style="fill:none;stroke:#000000;stroke-width:0.264583;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:none;stroke:#999999;stroke-width:0.264583;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect37-2-0-1-5"
        width="12.917765"
        height="9.7734842"
        x="81.167603"
        y="1392.4832" />
     <rect
-       style="fill:none;stroke:#000000;stroke-width:0.264583;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:none;stroke:#999999;stroke-width:0.264583;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect37-2-0-1-9"
        width="12.917765"
        height="9.7734842"
        x="81.167603"
        y="1402.2566" />
     <rect
-       style="fill:none;stroke:#000000;stroke-width:0.264583;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:none;stroke:#999999;stroke-width:0.264583;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect37-2-0-1-50"
        width="12.917765"
        height="9.7734842"
        x="81.167603"
        y="1372.9363" />
     <rect
-       style="fill:none;stroke:#000000;stroke-width:0.264583;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:none;stroke:#999999;stroke-width:0.264583;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect37-2-0-1-7"
        width="12.917765"
        height="9.7734842"
        x="94.085365"
        y="1382.7097" />
     <rect
-       style="fill:none;stroke:#000000;stroke-width:0.264583;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:none;stroke:#999999;stroke-width:0.264583;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect37-2-0-1-5-4"
        width="12.917765"
        height="9.7734842"
        x="94.085365"
        y="1392.4832" />
     <rect
-       style="fill:none;stroke:#000000;stroke-width:0.264583;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:none;stroke:#999999;stroke-width:0.264583;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect37-2-0-1-9-3"
        width="12.917765"
        height="9.7734842"
        x="94.085365"
        y="1402.2566" />
     <rect
-       style="fill:none;stroke:#000000;stroke-width:0.264583;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:none;stroke:#999999;stroke-width:0.264583;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect37-2-0-1-50-1"
        width="12.917765"
        height="9.7734842"
        x="94.085365"
        y="1372.9363" />
     <rect
-       style="fill:none;stroke:#000000;stroke-width:0.264583;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:none;stroke:#999999;stroke-width:0.264583;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect37-2-0-1-4"
        width="12.917765"
        height="9.7734842"
        x="107.00313"
        y="1382.7097" />
     <rect
-       style="fill:none;stroke:#000000;stroke-width:0.264583;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:none;stroke:#999999;stroke-width:0.264583;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect37-2-0-1-5-1"
        width="12.917765"
        height="9.7734842"
        x="107.00313"
        y="1392.4832" />
     <rect
-       style="fill:none;stroke:#000000;stroke-width:0.264583;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:none;stroke:#999999;stroke-width:0.264583;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect37-2-0-1-9-2"
        width="12.917765"
        height="9.7734842"
        x="107.00313"
        y="1402.2566" />
     <rect
-       style="fill:none;stroke:#000000;stroke-width:0.264583;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:none;stroke:#999999;stroke-width:0.264583;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect37-2-0-1-50-8"
        width="12.917765"
        height="9.7734842"
