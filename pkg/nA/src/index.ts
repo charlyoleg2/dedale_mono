@@ -51,10 +51,9 @@ function db_read_person(name: string): tPerson {
 }
 
 const clientnW = hc<nWType>('http://localhost:3010/');
-const app = new Hono();
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-const route = app
+const router = new Hono()
 	.get('/', (c) => {
 		return c.text('Hello Hono!');
 	})
@@ -97,6 +96,8 @@ const route = app
 		);
 	});
 
+const app = new Hono();
+const api = app.route('/api', router);
 if (esMain(import.meta)) {
 	const port = 3000;
 	console.log(`Server is running on http://localhost:${port}`);
@@ -106,5 +107,5 @@ if (esMain(import.meta)) {
 	});
 }
 
-export type nAType = typeof route;
-export { addi }; // re-export addi
+export type nAType = typeof router;
+export { addi, api };

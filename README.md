@@ -7,7 +7,7 @@ Presentation
 
 This is a monorepo that contains the following *javascript* packages:
 
-1. nF: the entry-front of the *dedale* backend
+1. nA: the entry-front of the *dedale* backend
 2. nP1: a micro-service for heavy processing
 3. nP2: an other micro-service for heavy processing
 4. nW: the micro-service for writing the data to persistent media
