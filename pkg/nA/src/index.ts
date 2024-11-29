@@ -106,5 +106,5 @@ if (esMain(import.meta)) {
 	});
 }
 
-export type nFType = typeof route;
+export type nAType = typeof route;
 export { addi }; // re-export addi
