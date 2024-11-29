@@ -52,7 +52,6 @@ function db_read_person(name: string): tPerson {
 
 const clientnW = hc<nWType>('http://localhost:3010/');
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const router = new Hono()
 	.get('/', (c) => {
 		return c.text('Hello Hono!');
