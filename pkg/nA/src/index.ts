@@ -50,9 +50,10 @@ function db_read_person(name: string): tPerson {
 	return rPerson;
 }
 
+const app = new Hono();
 const clientnW = hc<nWType>('http://localhost:3010/');
 
-const router = new Hono()
+const router = app
 	.get('/', (c) => {
 		return c.text('Hello Hono!');
 	})
@@ -95,8 +96,7 @@ const router = new Hono()
 		);
 	});
 
-const app = new Hono();
-const api = app.route('/api', router);
+const api = new Hono().route('/api', router);
 if (esMain(import.meta)) {
 	const port = 3000;
 	console.log(`Server is running on http://localhost:${port}`);
