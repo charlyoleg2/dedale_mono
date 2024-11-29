@@ -1,4 +1,4 @@
-import { api } from 'nF';
+import { api } from 'nA';
 import type { RequestHandler } from '@sveltejs/kit';
 
 export const GET: RequestHandler = ({ request }) => api.fetch(request);
