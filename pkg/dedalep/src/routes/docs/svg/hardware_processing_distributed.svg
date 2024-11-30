@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="480.30798"
-   height="314.01788"
-   viewBox="0 0 127.08149 83.083898"
+   width="521.71765"
+   height="347.14551"
+   viewBox="0 0 138.0378 91.848916"
    version="1.1"
    id="svg1"
    inkscape:version="1.4 (1:1.4+202410161351+e7c3feb100)"
@@ -23,9 +23,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="px"
-     inkscape:zoom="0.78484147"
-     inkscape:cx="396.25837"
-     inkscape:cy="561.25984"
+     inkscape:zoom="2.2198668"
+     inkscape:cx="256.77216"
+     inkscape:cy="5242.4317"
      inkscape:window-width="1854"
      inkscape:window-height="1131"
      inkscape:window-x="0"
@@ -35,8 +35,8 @@
     <inkscape:page
        x="0"
        y="0"
-       width="127.08149"
-       height="83.0839"
+       width="138.0378"
+       height="91.848915"
        id="page2"
        margin="0"
        bleed="0" />
@@ -44,16 +44,10 @@
   <defs
      id="defs1">
     <rect
-       x="335.60571"
-       y="737.43158"
-       width="377.04962"
-       height="28.53017"
-       id="rect13" />
-    <rect
        x="332.00189"
        y="719.86298"
-       width="137.6459"
-       height="34.203236"
+       width="226.83589"
+       height="95.999153"
        id="rect12" />
     <rect
        x="402.34592"
@@ -175,19 +169,39 @@
          sodipodi:nodetypes="ccc"
          id="path1-9-4" />
     </marker>
+    <marker
+       style="overflow:visible"
+       id="ArrowWide-629"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Wide arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:none;stroke:context-stroke;stroke-width:1;stroke-linecap:butt"
+         d="M 3,-3 0,0 3,3"
+         transform="rotate(180,0.125,0)"
+         sodipodi:nodetypes="ccc"
+         id="path1-1" />
+    </marker>
   </defs>
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-11.59233,-180.08945)">
+     transform="translate(-11.59233,-171.32442)">
     <rect
        style="fill:#ffffff;stroke:#ffffff;stroke-width:0.264583;stroke-linejoin:round;stroke-dasharray:none"
        id="rect6-8"
-       width="126.81691"
-       height="82.819305"
+       width="137.77321"
+       height="91.584343"
        x="11.724622"
-       y="180.22174"
+       y="171.4567"
        inkscape:export-filename="hardware_processing_distributed.svg"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
@@ -329,85 +343,97 @@
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,7.479753,1.7878324)"
        id="text9"
-       style="font-size:14.6667px;line-height:normal;font-family:'Liberation Mono';-inkscape-font-specification:'Liberation Mono';text-decoration-color:#000000;white-space:pre;shape-inside:url(#rect9);fill:#0000ff;stroke-width:1;-inkscape-stroke:none;stop-color:#000000"><tspan
+       style="font-size:14.6667px;line-height:normal;font-family:'Liberation Mono';-inkscape-font-specification:'Liberation Mono';text-decoration-color:#000000;white-space:pre;shape-inside:url(#rect9);display:inline;fill:#0000ff;stroke-width:1;-inkscape-stroke:none;stop-color:#000000"><tspan
          x="133.79102"
          y="738.76885"
-         id="tspan14">Ethernet</tspan></text>
+         id="tspan9">Ethernet</tspan></text>
     <text
        xml:space="preserve"
-       transform="matrix(0.26458333,0,0,0.26458333,-2.9797207,13.22996)"
+       transform="matrix(0.26458333,0,0,0.26458333,-38.039881,-19.301823)"
        id="text10"
-       style="font-size:14.6667px;line-height:normal;font-family:'Liberation Mono';-inkscape-font-specification:'Liberation Mono';text-align:center;text-decoration-color:#000000;white-space:pre;shape-inside:url(#rect10);fill:#000000;stroke-width:1;-inkscape-stroke:none;stop-color:#000000"
+       style="font-size:14.6667px;line-height:normal;font-family:'Liberation Mono';-inkscape-font-specification:'Liberation Mono';text-align:center;text-decoration-color:#000000;white-space:pre;shape-inside:url(#rect10);display:inline;fill:#000000;stroke-width:1;-inkscape-stroke:none;stop-color:#000000"
        x="42.915138"
        y="0"><tspan
          x="409.86548"
          y="747.94854"
-         id="tspan15">scalable
+         id="tspan10">scalable
 </tspan><tspan
          x="401.06403"
          y="766.28191"
-         id="tspan16">processing
+         id="tspan11">processing
 </tspan><tspan
          x="409.86548"
          y="784.61529"
-         id="tspan17">capacity</tspan></text>
+         id="tspan12">capacity</tspan></text>
     <text
        xml:space="preserve"
-       transform="matrix(0.26458333,0,0,0.26458333,-6.9231396,13.706715)"
+       transform="matrix(0.26458333,0,0,0.26458333,0.49343251,-49.165592)"
        id="text11"
-       style="font-size:14.6667px;line-height:normal;font-family:'Liberation Mono';-inkscape-font-specification:'Liberation Mono';text-align:center;text-decoration-color:#000000;white-space:pre;shape-inside:url(#rect11);fill:#000000;stroke-width:1;-inkscape-stroke:none;stop-color:#000000"
+       style="font-size:14.6667px;line-height:normal;font-family:'Liberation Mono';-inkscape-font-specification:'Liberation Mono';text-align:center;text-decoration-color:#000000;white-space:pre;shape-inside:url(#rect11);display:inline;fill:#000000;stroke-width:1;-inkscape-stroke:none;stop-color:#000000"
        x="56.095833"
        y="0"><tspan
          x="428.02759"
          y="854.99151"
-         id="tspan18">software
+         id="tspan13">software
 </tspan><tspan
          x="406.02396"
          y="873.32488"
-         id="tspan19">must be split
+         id="tspan14">must be split
 </tspan><tspan
          x="410.42468"
          y="891.65826"
-         id="tspan20">into several
+         id="tspan15">into several
 </tspan><tspan
          x="432.42831"
          y="909.99163"
-         id="tspan21">process</tspan></text>
+         id="tspan16">process</tspan></text>
     <path
-       style="fill:#d4aa00;stroke:#ff6600;stroke-width:0.264583;stroke-linejoin:round;stroke-dasharray:none;marker-end:url(#ArrowWide)"
-       d="m 114.06371,223.59824 v 10.96537"
+       style="fill:#d4aa00;stroke:#ff00ff;stroke-width:0.264583;stroke-linejoin:round;stroke-dasharray:none;marker-end:url(#ArrowWide)"
+       d="M 94.464058,182.6854 H 105.42943"
        id="path11" />
     <text
        xml:space="preserve"
-       transform="matrix(0.26458333,0,0,0.26458333,-5.7641352,-3.700017)"
+       transform="matrix(0.26458333,0,0,0.26458333,6.2035157,32.034377)"
        id="text12"
-       style="font-size:14.6667px;line-height:normal;font-family:'Liberation Mono';-inkscape-font-specification:'Liberation Mono';text-decoration-color:#000000;white-space:pre;shape-inside:url(#rect12);fill:#000000;stroke-width:1;-inkscape-stroke:none;stop-color:#000000"><tspan
-         x="332.00195"
+       style="font-size:14.6667px;line-height:normal;font-family:'Liberation Mono';-inkscape-font-specification:'Liberation Mono';text-align:center;text-decoration-color:#000000;white-space:pre;shape-inside:url(#rect12);display:inline;fill:#000000;stroke-width:1;-inkscape-stroke:none;stop-color:#000000"
+       x="91.577362"
+       y="0"><tspan
+         x="397.01193"
          y="732.91338"
-         id="tspan22">new bottleneck</tspan></text>
+         id="tspan17">bottlenecks
+</tspan><tspan
+         x="392.61121"
+         y="751.24676"
+         id="tspan18">mitigated by
+</tspan><tspan
+         x="353.00467"
+         y="769.58013"
+         id="tspan19">software architecture</tspan></text>
     <ellipse
        style="fill:none;stroke:#ff6600;stroke-width:0.264583;stroke-linejoin:round;stroke-dasharray:none"
        id="path12"
-       cx="69.60627"
-       cy="199.51335"
+       cx="203.89587"
+       cy="-78.708427"
        rx="1.6686436"
-       ry="3.575665" />
+       ry="3.575665"
+       transform="rotate(90)" />
     <path
        style="fill:none;stroke:#ff6600;stroke-width:0.264583;stroke-linejoin:round;stroke-dasharray:none;marker-end:url(#ArrowWide)"
-       d="m 80.818512,189.81838 -9.305215,6.72399"
+       d="M 110.14769,223.36152 83.986623,204.1275"
        id="path13"
        sodipodi:nodetypes="cc" />
+    <ellipse
+       style="fill:none;stroke:#ff6600;stroke-width:0.264583;stroke-linejoin:round;stroke-dasharray:none"
+       id="path12-5"
+       cx="236.06538"
+       cy="-78.373222"
+       rx="1.9791791"
+       ry="5.7669253"
+       transform="rotate(90)" />
     <path
-       style="fill:none;stroke:#0000ff;stroke-width:0.79375;stroke-linejoin:round;stroke-dasharray:none"
-       d="m 52.675382,199.51336 16.862572,-1e-5"
-       id="path9-1-6" />
-    <text
-       xml:space="preserve"
-       transform="matrix(0.26458333,0,0,0.26458333,-32.429887,-12.976849)"
-       id="text13"
-       style="font-size:14.6667px;line-height:normal;font-family:'Liberation Mono';-inkscape-font-specification:'Liberation Mono';text-decoration-color:#000000;white-space:pre;shape-inside:url(#rect13);fill:#000000;stroke-width:1;-inkscape-stroke:none;stop-color:#000000"><tspan
-         x="335.60547"
-         y="750.48174"
-         id="tspan23">mitigated by software architecture</tspan></text>
+       style="fill:none;stroke:#ff6600;stroke-width:0.264583;stroke-linejoin:round;stroke-dasharray:none;marker-end:url(#ArrowWide-629)"
+       d="M 109.8516,225.06058 85.376123,235.66141"
+       id="path13-7"
+       sodipodi:nodetypes="cc" />
   </g>
 </svg>
