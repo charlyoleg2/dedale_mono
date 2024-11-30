@@ -3,8 +3,8 @@
 
 <svg
    width="448.32413"
-   height="186.14648"
-   viewBox="0 0 118.61909 49.251257"
+   height="195.96094"
+   viewBox="0 0 118.61909 51.847998"
    version="1.1"
    id="svg1"
    inkscape:version="1.4 (1:1.4+202410161351+e7c3feb100)"
@@ -25,7 +25,7 @@
      inkscape:document-units="px"
      inkscape:zoom="2.2198668"
      inkscape:cx="256.77216"
-     inkscape:cy="5180.7163"
+     inkscape:cy="4913.1326"
      inkscape:window-width="1854"
      inkscape:window-height="1131"
      inkscape:window-x="0"
@@ -36,13 +36,19 @@
        x="-3.0567282e-15"
        y="0"
        width="118.61909"
-       height="49.251259"
+       height="51.848"
        id="page2"
        margin="0"
        bleed="0" />
   </sodipodi:namedview>
   <defs
      id="defs1">
+    <rect
+       x="93.24884"
+       y="5135.8936"
+       width="146.85567"
+       height="32.43438"
+       id="rect29" />
     <rect
        x="58.111595"
        y="5309.3276"
@@ -84,17 +90,66 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-5.7079613,-1366.7252)">
+     transform="translate(-5.7079613,-1364.1284)">
     <rect
        style="fill:#ffffff;stroke:#ffffff;stroke-width:0.264583;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect38"
        width="118.35451"
-       height="48.98661"
+       height="51.583488"
        x="5.8402529"
-       y="1366.8575"
+       y="1364.2606"
        inkscape:export-filename="flow_options.svg"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
+    <rect
+       style="fill:#d7eef4;stroke:#999999;stroke-width:0.264583;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect37"
+       width="71.155731"
+       height="9.7734842"
+       x="10.011862"
+       y="1402.2566" />
+    <rect
+       style="fill:#d7eef4;stroke:#999999;stroke-width:0.264583;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect37-2-0"
+       width="71.155731"
+       height="9.7734842"
+       x="10.011869"
+       y="1382.7097" />
+    <rect
+       style="fill:#d7eef4;stroke:#999999;stroke-width:0.264583;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect37-2"
+       width="71.155731"
+       height="9.7734842"
+       x="10.011868"
+       y="1392.4832" />
+    <rect
+       style="fill:#fff6d5;stroke:#999999;stroke-width:0.264583;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect37-2-0-1-50"
+       width="12.917765"
+       height="9.7734842"
+       x="81.167603"
+       y="1372.9363" />
+    <rect
+       style="fill:#fff6d5;stroke:#999999;stroke-width:0.264583;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect37-2-0-1-50-1"
+       width="12.917765"
+       height="9.7734842"
+       x="94.085365"
+       y="1372.9363" />
+    <rect
+       style="fill:#fff6d5;stroke:#999999;stroke-width:0.264583;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect37-2-0-1-50-8"
+       width="12.917765"
+       height="9.7734842"
+       x="107.00313"
+       y="1372.9363" />
+    <rect
+       style="fill:#fff6d5;stroke:#999999;stroke-width:0.264583;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect37-2-0-1-50-12"
+       width="38.753288"
+       height="6.1978211"
+       x="81.167603"
+       y="1366.7385" />
     <text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,55.572448,18.326875)"
@@ -126,7 +181,7 @@
        style="font-size:14.6667px;line-height:normal;font-family:'Liberation Mono';-inkscape-font-specification:'Liberation Mono';text-decoration-color:#000000;white-space:pre;shape-inside:url(#rect34);fill:#000000;stroke-width:1;-inkscape-stroke:none;stop-color:#000000"><tspan
          x="65.769531"
          y="5234.0853"
-         id="tspan4">node-A independant</tspan></text>
+         id="tspan4">hono-A independant</tspan></text>
     <text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,-1.8967796,-8.1171731)"
@@ -134,7 +189,7 @@
        style="font-size:14.6667px;line-height:normal;font-family:'Liberation Mono';-inkscape-font-specification:'Liberation Mono';text-decoration-color:#000000;white-space:pre;shape-inside:url(#rect35);fill:#000000;stroke-width:1;-inkscape-stroke:none;stop-color:#000000"><tspan
          x="56.310547"
          y="5281.3841"
-         id="tspan5">node-A integrated</tspan></text>
+         id="tspan5">hono-A integrated</tspan></text>
     <text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,-2.4742332,-9.6542955)"
@@ -142,28 +197,7 @@
        style="font-size:14.6667px;line-height:normal;font-family:'Liberation Mono';-inkscape-font-specification:'Liberation Mono';text-decoration-color:#000000;white-space:pre;shape-inside:url(#rect36);fill:#000000;stroke-width:1;-inkscape-stroke:none;stop-color:#000000"><tspan
          x="58.111328"
          y="5322.3782"
-         id="tspan6">node-A integrated and node-B</tspan></text>
-    <rect
-       style="fill:none;stroke:#999999;stroke-width:0.264583;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0"
-       id="rect37"
-       width="71.155731"
-       height="9.7734842"
-       x="10.011862"
-       y="1402.2566" />
-    <rect
-       style="fill:none;stroke:#999999;stroke-width:0.264583;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0"
-       id="rect37-2"
-       width="71.155731"
-       height="9.7734842"
-       x="10.011868"
-       y="1392.4832" />
-    <rect
-       style="fill:none;stroke:#999999;stroke-width:0.264583;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0"
-       id="rect37-2-0"
-       width="71.155731"
-       height="9.7734842"
-       x="10.011869"
-       y="1382.7097" />
+         id="tspan6">hono-A integrated and node-B</tspan></text>
     <rect
        style="fill:none;stroke:#999999;stroke-width:0.264583;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect37-2-0-1"
@@ -187,13 +221,6 @@
        y="1402.2566" />
     <rect
        style="fill:none;stroke:#999999;stroke-width:0.264583;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0"
-       id="rect37-2-0-1-50"
-       width="12.917765"
-       height="9.7734842"
-       x="81.167603"
-       y="1372.9363" />
-    <rect
-       style="fill:none;stroke:#999999;stroke-width:0.264583;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect37-2-0-1-7"
        width="12.917765"
        height="9.7734842"
@@ -215,13 +242,6 @@
        y="1402.2566" />
     <rect
        style="fill:none;stroke:#999999;stroke-width:0.264583;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0"
-       id="rect37-2-0-1-50-1"
-       width="12.917765"
-       height="9.7734842"
-       x="94.085365"
-       y="1372.9363" />
-    <rect
-       style="fill:none;stroke:#999999;stroke-width:0.264583;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect37-2-0-1-4"
        width="12.917765"
        height="9.7734842"
@@ -241,12 +261,15 @@
        height="9.7734842"
        x="107.00313"
        y="1402.2566" />
-    <rect
-       style="fill:none;stroke:#999999;stroke-width:0.264583;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0"
-       id="rect37-2-0-1-50-8"
-       width="12.917765"
-       height="9.7734842"
-       x="107.00313"
-       y="1372.9363" />
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,56.44625,8.6934814)"
+       id="text14"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.6667px;line-height:normal;font-family:'Liberation Mono';-inkscape-font-specification:'Liberation Mono Italic';text-align:center;text-decoration-color:#000000;white-space:pre;shape-inside:url(#rect29);fill:#000000;stroke-width:1;-inkscape-stroke:none;stop-color:#000000"
+       x="-64.80777"
+       y="0"><tspan
+         x="100.66586"
+         y="5148.9446"
+         id="tspan7">svelteKit modes</tspan></text>
   </g>
 </svg>

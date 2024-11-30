@@ -50,10 +50,6 @@ category: documentation
 	<img src="{base}/svg/page_processing.svg" alt="page_processing.svg" />
 	<figcaption>Options for page processing</figcaption>
 </figure>
-<figure>
-	<img src="{base}/svg/flow_options.svg" alt="flow_options.svg" />
-	<figcaption>Options for processing flow</figcaption>
-</figure>
 
 ### Sequence diagrams
 
@@ -70,8 +66,12 @@ category: documentation
 	<figcaption>Client Side Rendering</figcaption>
 </figure>
 
-### Data flow diagrams
+### SvelteKit / Hono integration
 
+<figure>
+	<img src="{base}/svg/flow_options.svg" alt="flow_options.svg" />
+	<figcaption>Options for svelteKit-hono integration</figcaption>
+</figure>
 <figure>
 	<img src="{base}/svg/flow_ssg.svg" alt="flow_ssg.svg" />
 	<figcaption>Server Side Generation</figcaption>
