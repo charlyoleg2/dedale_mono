@@ -4,7 +4,7 @@ import { z } from 'zod';
 import { zValidator } from '@hono/zod-validator';
 import { hc } from 'hono/client';
 import esMain from 'es-main';
-import type { nWType } from 'nW';
+import type { tApiW } from 'nW';
 import { addi } from 'nW';
 
 interface tPerson {
@@ -50,16 +50,18 @@ function db_read_person(name: string): tPerson {
 	return rPerson;
 }
 
-const app = new Hono();
-const clientnW = hc<nWType>('http://localhost:3010/');
+const apiA = new Hono();
+const clientnW = hc<tApiW>('http://localhost:3010/');
 
-const router = app
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+const routeA = apiA
+	.basePath('/api')
 	.get('/', (c) => {
-		return c.text('Hello Hono!');
+		return c.text('Hello Hono A!');
 	})
 	.get('/two', zValidator('query', z.object({ nama: z.string() })), async (c) => {
 		const query = c.req.valid('query');
-		const res = await clientnW.what.$get({ query: { name: query.nama } });
+		const res = await clientnW.apiW.what.$get({ query: { name: query.nama } });
 		const resp = await res.json();
 		//console.log(resp);
 		return c.text(resp.msg);
@@ -69,7 +71,7 @@ const router = app
 		zValidator('query', z.object({ numa: z.number({ coerce: true }).int() })),
 		async (c) => {
 			const query = c.req.valid('query');
-			const res = await clientnW.addi.$get({ query: { num: query.numa } });
+			const res = await clientnW.apiW.addi.$get({ query: { num: query.numa } });
 			const resp = await res.json();
 			//console.log(resp);
 			const toto = addi(3).toString();
@@ -96,15 +98,14 @@ const router = app
 		);
 	});
 
-const api = new Hono().route('/api', router);
 if (esMain(import.meta)) {
 	const port = 3000;
 	console.log(`Server is running on http://localhost:${port}`);
 	serve({
-		fetch: app.fetch,
+		fetch: apiA.fetch,
 		port
 	});
 }
 
-export type nAType = typeof router;
-export { addi, api };
+export type tApiA = typeof routeA;
+export { addi, apiA };

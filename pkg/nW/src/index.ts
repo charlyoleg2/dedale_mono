@@ -63,12 +63,12 @@ const rtGet_addi = createRoute({
 	}
 });
 
-// openapi app
-
-const app = new OpenAPIHono();
+// openapi app-apiW
+const apiW = new OpenAPIHono();
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-const routeForType = app
+const routeW = apiW
+	.basePath('/apiW')
 	.openapi(rtGet_root, (c) => {
 		return c.text('Hello Hono!');
 	})
@@ -105,25 +105,25 @@ const routeForType = app
 			);
 		}
 	);
-// swagger-ui
-app.get('/swagger', swaggerUI({ url: '/doc' }));
-// The OpenAPI documentation will be available at /doc
-app.doc('/doc', {
-	openapi: '3.0.0',
-	info: {
-		version: '1.0.0',
-		title: 'REST-API of nW'
-	}
-});
 
 if (esMain(import.meta)) {
+	// swagger-ui
+	apiW.get('/swagger', swaggerUI({ url: '/doc' }));
+	// The OpenAPI documentation will be available at /doc
+	apiW.doc('/doc', {
+		openapi: '3.0.0',
+		info: {
+			version: '1.0.0',
+			title: 'REST-API of nW'
+		}
+	});
 	const port = 3010;
 	console.log(`Server is running on http://localhost:${port}`);
 	serve({
-		fetch: app.fetch,
+		fetch: apiW.fetch,
 		port
 	});
 }
 
-export type nWType = typeof routeForType;
-export { addi };
+export type tApiW = typeof routeW;
+export { addi, apiW };
