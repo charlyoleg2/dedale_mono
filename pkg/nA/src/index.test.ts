@@ -11,4 +11,9 @@ describe('tests of nA', () => {
 		expect(res.status).toBe(200);
 		expect(await res.text()).toBe('Hello Hono A!');
 	});
+	it('apiA GET /api/argy', async () => {
+		const res = await apiA.request('/api/argy?namo=kifo');
+		expect(res.status).toBe(200);
+		expect(await res.text()).toBe('lala kifo');
+	});
 });

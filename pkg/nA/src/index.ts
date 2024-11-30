@@ -59,8 +59,13 @@ const routeA = apiA
 	.get('/', (c) => {
 		return c.text('Hello Hono A!');
 	})
+	.get('/argy', zValidator('query', z.object({ namo: z.string() })), async (c) => {
+		const query = c.req.valid('query');
+		return c.text(`lala ${query.namo}`);
+	})
 	.get('/two', zValidator('query', z.object({ nama: z.string() })), async (c) => {
 		const query = c.req.valid('query');
+		// const res = await apiW.request('/apiW/what', { query: { name: query.nama } });
 		const res = await clientnW.apiW.what.$get({ query: { name: query.nama } });
 		const resp = await res.json();
 		//console.log(resp);
