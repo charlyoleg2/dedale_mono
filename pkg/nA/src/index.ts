@@ -76,7 +76,7 @@ const router = app
 			return c.text(resp.msg + '   ' + toto);
 		}
 	)
-	.get('/list', async (c) => {
+	.get('/search', async (c) => {
 		return c.json(
 			{
 				ok: true,
