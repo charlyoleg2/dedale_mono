@@ -8,7 +8,9 @@
 		"skipLibCheck": true,
 		"types": ["node"],
 		"jsx": "react-jsx",
-		"jsxImportSource": "hono/jsx"
+		"jsxImportSource": "hono/jsx",
+		"declaration": true,
+		"sourceMap": true
 	},
 	"include": ["./src"]
 }
