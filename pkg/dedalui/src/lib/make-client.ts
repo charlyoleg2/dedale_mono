@@ -14,7 +14,8 @@ const makeClient = (fetch: Window['fetch']) => {
 		return browserClient;
 	}
 
-	const client = hc<tApiA>(origin + '/api', { fetch });
+	//const client = hc<tApiA>(origin + '/api', { fetch });
+	const client = hc<tApiA>(origin, { fetch });
 
 	if (isBrowser) {
 		browserClient = client;
