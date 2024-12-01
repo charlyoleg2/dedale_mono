@@ -1,2 +1,11 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<script lang="ts">
+	import { base } from '$app/paths';
+</script>
+
+<h1>Welcome to Dedalui</h1>
+<p>The dynamic pages of Dedale</p>
+
+<h2>SSR pages</h2>
+<ol>
+	<li><a href="{base}/search">search page</a></li>
+</ol>
