@@ -4,12 +4,14 @@
 	//let { data } = $props();
 	const client = makeClient(fetch);
 
-	async function actionSearch(iLetters: string): Promise<string[]> {
+	async function fetchSearch(iLetters: string): Promise<string[]> {
 		let rPersons: string[] = [];
+		//console.log(`dbg098: iLetters: ${iLetters}`);
 		try {
 			const res = await client.api.search.$get({ query: { letters: iLetters } });
 			if (res.ok) {
 				const resp = await res.json();
+				//console.log(resp);
 				rPersons = resp.list;
 			}
 		} catch (error) {
@@ -19,17 +21,20 @@
 	}
 
 	let lettres = $state('aul');
-	let personsP = $derived.by(async () => {
-		return await actionSearch(lettres);
-	});
+	let persons: string[] = $state([]);
+	async function actionSearch() {
+		persons = await fetchSearch(lettres);
+	}
 </script>
 
 <h1>Searching page with dynamic content</h1>
-<p>some letter <input type="text" bind:value={lettres} /></p>
+<p>
+	some letter <input type="text" bind:value={lettres} /><button onclick={actionSearch}
+		>Search</button
+	>
+</p>
 <ol>
-	{#await personsP then persons}
-		{#each persons as item, idx}
-			<li>{item} [{idx}]</li>
-		{/each}
-	{/await}
+	{#each persons as item, idx}
+		<li>{item} [{idx}]</li>
+	{/each}
 </ol>
