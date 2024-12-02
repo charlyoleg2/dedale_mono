@@ -89,6 +89,10 @@ category: documentation
 	<figcaption>Client Side Rendering with independant node-A</figcaption>
 </figure>
 
+*Nodejs* enables running the same *javascript* code on the server and in the browser.
+This enables *frontend frameworks* like [svelteKit](https://svelte.dev/docs/kit/introduction) where *SSR* and *CSR* can be easily exchanged.
+If the *backend framework* (e.g. [hono](https://hono.dev/)) is also in *javascript*, it can be integrated/imported into the *frontend framework*.
+
 <style>
 	figure {
 		display: inline-block;
