@@ -8,6 +8,9 @@
 	let { children }: Props = $props();
 </script>
 
+<header>
+	<a href="/">dedalui-root</a>
+</header>
 <main>
 	{@render children?.()}
 </main>
