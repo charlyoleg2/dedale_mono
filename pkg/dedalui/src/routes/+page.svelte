@@ -8,4 +8,5 @@
 <h2>SSR pages</h2>
 <ol>
 	<li><a href="{base}/searchingAll">searching-all page</a></li>
+	<li><a href="{base}/searching">searching page</a></li>
 </ol>
