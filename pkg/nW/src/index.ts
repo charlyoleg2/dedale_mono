@@ -38,7 +38,7 @@ const rtGet_what = createRoute({
 		200: {
 			content: {
 				'application/json': {
-					schema: z.object({ ok: z.boolean(), msg: z.string() })
+					schema: z.object({ good: z.boolean(), msg: z.string() })
 				}
 			},
 			description: 'Just a question'
@@ -55,7 +55,7 @@ const rtGet_addi = createRoute({
 		200: {
 			content: {
 				'application/json': {
-					schema: z.object({ ok: z.boolean(), msg: z.string() })
+					schema: z.object({ good: z.boolean(), msg: z.string() })
 				}
 			},
 			description: 'A line of mathematic'
@@ -83,7 +83,7 @@ const routeW = apiW
 			//const name = query.name ? query.name : "blouf";
 			return c.json(
 				{
-					ok: true,
+					good: true,
 					msg: `What ${query.name}`
 				},
 				200
@@ -98,7 +98,7 @@ const routeW = apiW
 			const query = c.req.valid('query');
 			return c.json(
 				{
-					ok: true,
+					good: true,
 					msg: `5 + ${query.num} = ${addi(query.num)}`
 				},
 				200

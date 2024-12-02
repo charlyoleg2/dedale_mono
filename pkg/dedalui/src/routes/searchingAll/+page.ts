@@ -7,11 +7,11 @@ import { makeClient } from '$lib/make-client';
 /** @type {import('./$types').PageLoad} */
 export async function load({ fetch }) {
 	const client = makeClient(fetch);
-	const res = await client.api.search.$get();
-	const resp = await res.json();
+	const res = await client.api.searchAll.$get();
 
 	const listPersons: string[] = [];
-	if (resp.ok) {
+	if (res.ok) {
+		const resp = await res.json();
 		listPersons.push(...resp.list);
 	}
 	return { persons: listPersons };

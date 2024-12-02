@@ -31,10 +31,14 @@ const mydb: tPerson[] = [
 	}
 ];
 
-function db_list_name(): string[] {
+function db_list_name(iLetters = ''): string[] {
 	const rList: string[] = [];
+	const pushAll = iLetters === '' ? true : false;
+	const regex = new RegExp(iLetters);
 	for (const obj of mydb) {
-		rList.push(obj.name);
+		if (pushAll || regex.test(obj.name)) {
+			rList.push(obj.name);
+		}
 	}
 	return rList;
 }
@@ -83,24 +87,16 @@ const routeA = apiA
 			return c.text(resp.msg + '   ' + toto);
 		}
 	)
-	.get('/search', async (c) => {
-		return c.json(
-			{
-				ok: true,
-				list: db_list_name()
-			},
-			200
-		);
+	.get('/searchAll', async (c) => {
+		return c.json({ list: db_list_name() }, 200);
+	})
+	.get('/search', zValidator('query', z.object({ letters: z.string() })), async (c) => {
+		const query = c.req.valid('query');
+		return c.json({ list: db_list_name(query.letters) }, 200);
 	})
 	.get('/product', zValidator('query', z.object({ id: z.string() })), async (c) => {
 		const query = c.req.valid('query');
-		return c.json(
-			{
-				ok: true,
-				product: db_read_person(query.id)
-			},
-			200
-		);
+		return c.json({ product: db_read_person(query.id) }, 200);
 	});
 
 if (esMain(import.meta)) {
