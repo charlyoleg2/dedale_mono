@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	/** @type {{ data: import('./$types').PageData }} */
 	let { data } = $props();
 	const clientA = data.fClientA;
@@ -34,6 +35,6 @@
 </p>
 <ol>
 	{#each persons as item, idx}
-		<li>{item} [{idx}]</li>
+		<li><a href="{base}/person/{item}">{item} [{idx}]</a></li>
 	{/each}
 </ol>

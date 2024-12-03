@@ -31,13 +31,21 @@ const mydb: tPerson[] = [
 	}
 ];
 
-function db_list_name(iLetters = ''): string[] {
+function db_list_name(): string[] {
 	const rList: string[] = [];
-	const pushAll = iLetters === '' ? true : false;
-	const regex = new RegExp(iLetters);
 	for (const obj of mydb) {
-		if (pushAll || regex.test(obj.name)) {
-			rList.push(obj.name);
+		rList.push(obj.name);
+	}
+	return rList;
+}
+function db_search_name(iLetters: string): string[] {
+	const rList: string[] = [];
+	if (iLetters.length > 0) {
+		const regex = new RegExp(iLetters);
+		for (const obj of mydb) {
+			if (regex.test(obj.name)) {
+				rList.push(obj.name);
+			}
 		}
 	}
 	return rList;
@@ -92,11 +100,11 @@ const routeA = apiA
 	})
 	.get('/search', zValidator('query', z.object({ letters: z.string() })), async (c) => {
 		const query = c.req.valid('query');
-		return c.json({ list: db_list_name(query.letters) }, 200);
+		return c.json({ list: db_search_name(query.letters) }, 200);
 	})
-	.get('/product', zValidator('query', z.object({ id: z.string() })), async (c) => {
+	.get('/perso', zValidator('query', z.object({ id: z.string() })), async (c) => {
 		const query = c.req.valid('query');
-		return c.json({ product: db_read_person(query.id) }, 200);
+		return c.json({ pers: db_read_person(query.id) }, 200);
 	});
 
 if (esMain(import.meta)) {
@@ -108,5 +116,6 @@ if (esMain(import.meta)) {
 	});
 }
 
-export type tApiA = typeof routeA;
+type tApiA = typeof routeA;
+export type { tPerson, tApiA };
 export { addi, apiA };
