@@ -1,14 +1,13 @@
 <script lang="ts">
-	import { makeClient } from '$lib/make-client';
 	/** @type {{ data: import('./$types').PageData }} */
-	//let { data } = $props();
-	const client = makeClient(fetch);
+	let { data } = $props();
+	const clientA = data.fClientA;
 
 	async function fetchSearch(iLetters: string): Promise<string[]> {
 		let rPersons: string[] = [];
 		//console.log(`dbg098: iLetters: ${iLetters}`);
 		try {
-			const res = await client.api.search.$get({ query: { letters: iLetters } });
+			const res = await clientA.api.search.$get({ query: { letters: iLetters } });
 			if (res.ok) {
 				const resp = await res.json();
 				//console.log(resp);
