@@ -93,6 +93,11 @@ category: documentation
 This enables *frontend frameworks* like [svelteKit](https://svelte.dev/docs/kit/introduction) where *SSR* and *CSR* can be easily exchanged.
 If the *backend framework* (e.g. [hono](https://hono.dev/)) is also in *javascript*, it can be integrated/imported into the *frontend framework*.
 
+<figure>
+	<img src="{base}/svg/software_life_cycle.svg" alt="software_life_cycle.svg" />
+	<figcaption>Software lifecycle</figcaption>
+</figure>
+
 <style>
 	figure {
 		display: inline-block;
