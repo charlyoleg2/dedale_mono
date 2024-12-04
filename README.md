@@ -11,8 +11,9 @@ This is a monorepo that contains the following *javascript* packages:
 2. nZ: a micro-service for other processing
 3. dedalui: the *svelte-kit* dynamic web-ui of *dedale*
 4. dedalep: the *svelte-kit* static pages of *dedale*
+5. back-config: the configuration of the backend
 
-Large application with many users could be more distributed and, for example, have the following packages:
+Below an example of a more distributed backend for a large application with many users:
 
 1. nA: the entry-front of the *dedale* backend
 2. nP1: a micro-service for heavy processing
@@ -24,6 +25,7 @@ Large application with many users could be more distributed and, for example, ha
 8. nR4: the 4th micro-service for reading the data from persistent media
 9. dedalui: the *svelte-kit* dynamic web-ui of *dedale*
 10. dedalep: the *svelte-kit* static pages of *dedale*
+11. back-config: the configuration of the backend
 
 A public instance of *dedalep* is available on that [github-page](https://charlyoleg2.github.io/dedale_mono/).
 The *code source* is available on [github](https://github.com/charlyoleg2/dedale_mono).

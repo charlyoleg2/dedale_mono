@@ -5,7 +5,7 @@ import { serve } from '@hono/node-server';
 import { z, createRoute, OpenAPIHono } from '@hono/zod-openapi';
 import { swaggerUI } from '@hono/swagger-ui';
 import esMain from 'es-main';
-import cfg from '../../../dedale-config.json' with { type: 'json' };
+import backCfg from 'back-config';
 
 function addi(aOne: number): number {
 	const rNum = aOne + 5;
@@ -118,10 +118,10 @@ if (esMain(import.meta)) {
 			title: 'REST-API of nZ'
 		}
 	});
-	console.log(`Server is running on ${cfg.nZ_host}:${cfg.nZ_port}`);
+	console.log(`Server is running on ${backCfg.nZ_host}:${backCfg.nZ_port}`);
 	serve({
 		fetch: apiZ.fetch,
-		port: cfg.nZ_port
+		port: backCfg.nZ_port
 	});
 }
 
