@@ -4,6 +4,6 @@ import { describe, it, expect } from 'vitest';
 
 describe('tests of back-config', () => {
 	it('dummy-test', () => {
-		expect((50 + 25)).toBe(75);
+		expect(50 + 25).toBe(75);
 	});
 });
