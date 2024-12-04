@@ -1,0 +1,50 @@
+{
+	"name": "back-config",
+	"version": "0.1.2",
+	"description": "Configuration of the backend",
+	"private": true,
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/charlyoleg2/dedale_mono.git"
+	},
+	"homepage": "https://charlyoleg2.github.io/dedale_mono/",
+	"author": "charlyoleg",
+	"license": "ISC",
+	"keywords": [
+		"micro-service",
+		"hono",
+		"zod"
+	],
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "./build/index.d.ts",
+			"default": "./build/index.js"
+		}
+	},
+	"scripts": {
+		"dev": "tsx watch src/index.ts",
+		"build": "tsc",
+		"pretty": "prettier --check .",
+		"format": "prettier --write .",
+		"lint": "eslint .",
+		"test:unit": "vitest",
+		"test:unit:once": "vitest --run",
+		"ci": "run-s build pretty lint test:unit:once",
+		"run_n": "node build/index.js",
+		"clean": "rimraf build node_modules"
+	},
+	"devDependencies": {
+		"@eslint/js": "^9.15.0",
+		"@types/node": "^22.10.1",
+		"eslint": "^9.16.0",
+		"eslint-config-prettier": "^9.1.0",
+		"npm-run-all2": "^7.0.1",
+		"prettier": "^3.4.1",
+		"rimraf": "^6.0.1",
+		"tsx": "^4.19.2",
+		"typescript": "^5.7.2",
+		"typescript-eslint": "^8.16.0",
+		"vitest": "^2.1.6"
+	}
+}

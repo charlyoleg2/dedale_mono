@@ -5,7 +5,7 @@ import { serve } from '@hono/node-server';
 import { z, createRoute, OpenAPIHono } from '@hono/zod-openapi';
 import { swaggerUI } from '@hono/swagger-ui';
 import esMain from 'es-main';
-import backCfg from 'back-config';
+import { backCfg } from 'back-config';
 
 function addi(aOne: number): number {
 	const rNum = aOne + 5;
