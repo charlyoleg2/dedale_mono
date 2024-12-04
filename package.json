@@ -57,6 +57,7 @@
 		"clean": "run-s clean-root clean-hono clean-svelte",
 		"run_n": "run-p nA:run nZ:run",
 		"test_nA": "scr/test_nA.sh",
+		"test_nZ": "scr/test_nZ.sh",
 		"test_dedalui": "scr/test_dedalui.sh",
 		"preview": "run-p run_n dedalui:preview",
 		"versions": "run-s back-config:version nA:version nZ:version dedalui:version dedalep:version",
