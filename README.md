@@ -8,6 +8,13 @@ Presentation
 This is a monorepo that contains the following *javascript* packages:
 
 1. nA: the entry-front of the *dedale* backend
+2. nZ: a micro-service for other processing
+3. dedalui: the *svelte-kit* dynamic web-ui of *dedale*
+4. dedalep: the *svelte-kit* static pages of *dedale*
+
+Large application with many users could be more distributed and, for example, have the following packages:
+
+1. nA: the entry-front of the *dedale* backend
 2. nP1: a micro-service for heavy processing
 3. nP2: an other micro-service for heavy processing
 4. nW: the micro-service for writing the data to persistent media

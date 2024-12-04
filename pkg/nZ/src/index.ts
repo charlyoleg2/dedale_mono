@@ -114,7 +114,7 @@ if (esMain(import.meta)) {
 		openapi: '3.0.0',
 		info: {
 			version: '1.0.0',
-			title: 'REST-API of nW'
+			title: 'REST-API of nZ'
 		}
 	});
 	const port = 3010;

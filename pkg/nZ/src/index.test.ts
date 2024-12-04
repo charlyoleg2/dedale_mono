@@ -1,8 +1,8 @@
-// index.test.ts of nW
+// index.test.ts of nZ
 import { describe, it, expect } from 'vitest';
 import { addi, apiW } from './index.js';
 
-describe('tests of nW', () => {
+describe('tests of nZ', () => {
 	it('function addi()', () => {
 		expect(addi(50)).toBe(55);
 	});

@@ -1,5 +1,5 @@
 {
-	"entryPoints": ["pkg/nF", "pkg/nW"],
+	"entryPoints": ["pkg/nA", "pkg/nZ"],
 	"name": "Dedale ecosystem",
 	"entryPointStrategy": "packages",
 	"out": "build/apidoc",
