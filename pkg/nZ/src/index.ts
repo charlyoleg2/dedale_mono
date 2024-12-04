@@ -5,6 +5,7 @@ import { serve } from '@hono/node-server';
 import { z, createRoute, OpenAPIHono } from '@hono/zod-openapi';
 import { swaggerUI } from '@hono/swagger-ui';
 import esMain from 'es-main';
+import cfg from '../../../dedale-config.json' with { type: 'json' };
 
 function addi(aOne: number): number {
 	const rNum = aOne + 5;
@@ -117,8 +118,8 @@ if (esMain(import.meta)) {
 			title: 'REST-API of nZ'
 		}
 	});
-	const port = 3010;
-	console.log(`Server is running on http://localhost:${port}`);
+	const port = parseInt(cfg.nZ_port);
+	console.log(`Server is running on ${cfg.nZ_host}:${port}`);
 	serve({
 		fetch: apiZ.fetch,
 		port
