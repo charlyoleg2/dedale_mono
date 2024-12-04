@@ -118,7 +118,7 @@ if (esMain(import.meta)) {
 			title: 'REST-API of nZ'
 		}
 	});
-	const port = parseInt(cfg.nZ_port);
+	const port = cfg.nZ_port;
 	console.log(`Server is running on ${cfg.nZ_host}:${port}`);
 	serve({
 		fetch: apiZ.fetch,
