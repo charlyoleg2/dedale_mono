@@ -4,6 +4,7 @@ import { z } from 'zod';
 import { zValidator } from '@hono/zod-validator';
 import { hc } from 'hono/client';
 import esMain from 'es-main';
+import { backCfg } from 'back-config';
 import type { tApiZ } from 'nZ';
 import { addi } from 'nZ';
 
@@ -63,7 +64,7 @@ function db_read_person(name: string): tPerson {
 }
 
 const apiA = new Hono();
-const clientnZ = hc<tApiZ>('http://localhost:3010/');
+const clientnZ = hc<tApiZ>(`${backCfg.nZ_host}:${backCfg.nZ_port}/`);
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 const routeA = apiA
@@ -108,11 +109,10 @@ const routeA = apiA
 	});
 
 if (esMain(import.meta)) {
-	const port = 3000;
-	console.log(`Server is running on http://localhost:${port}`);
+	console.log(`Server is running on ${backCfg.nA_host}:${backCfg.nA_port}`);
 	serve({
 		fetch: apiA.fetch,
-		port
+		port: backCfg.nA_port
 	});
 }
 
