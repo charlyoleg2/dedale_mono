@@ -1,3 +1,4 @@
+//import { backCfg } from 'back-config';
 import { apiA } from 'nA';
 import type { RequestHandler } from '@sveltejs/kit';
 
@@ -7,5 +8,5 @@ export const POST: RequestHandler = ({ request }) => apiA.fetch(request);
 //export const GET: RequestHandler = async ({ request }) => {
 //	console.log(request);
 //	const lurl = new URL(request.url);
-//	return fetch(`http://localhost:3000${lurl.pathname}${lurl.search}`);
+//	return fetch(`${backCfg.nZ_host}:${backCfg.nZ_port}${lurl.pathname}${lurl.search}`);
 //};

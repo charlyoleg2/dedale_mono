@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { backCfg } from 'back-config';
 	import { base } from '$app/paths';
 </script>
 
@@ -13,8 +14,12 @@
 
 <h2>Swagger UI</h2>
 <ol>
-	<li><a href="http://localhost:3000/swagger" rel="external">swagger-ui of rF</a></li>
-	<li><a href="http://localhost:3010/swagger" rel="external">swagger-ui of rW</a></li>
+	<li>
+		<a href="{backCfg.nA_host}:${backCfg.nA_port}/swagger" rel="external">swagger-ui of nA</a>
+	</li>
+	<li>
+		<a href="{backCfg.nZ_host}:{backCfg.nZ_port}/swagger" rel="external">swagger-ui of nZ</a>
+	</li>
 </ol>
 
 <h2>SSG pages</h2>
