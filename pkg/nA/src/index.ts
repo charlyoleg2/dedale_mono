@@ -4,7 +4,7 @@ import { z } from 'zod';
 import { zValidator } from '@hono/zod-validator';
 import { hc } from 'hono/client';
 import esMain from 'es-main';
-import type { tApiW } from 'nZ';
+import type { tApiZ } from 'nZ';
 import { addi } from 'nZ';
 
 interface tPerson {
@@ -63,7 +63,7 @@ function db_read_person(name: string): tPerson {
 }
 
 const apiA = new Hono();
-const clientnZ = hc<tApiW>('http://localhost:3010/');
+const clientnZ = hc<tApiZ>('http://localhost:3010/');
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 const routeA = apiA
@@ -77,8 +77,8 @@ const routeA = apiA
 	})
 	.get('/two', zValidator('query', z.object({ nama: z.string() })), async (c) => {
 		const query = c.req.valid('query');
-		// const res = await apiW.request('/apiW/what', { query: { name: query.nama } });
-		const res = await clientnZ.apiW.what.$get({ query: { name: query.nama } });
+		// const res = await apiZ.request('/apiZ/what', { query: { name: query.nama } });
+		const res = await clientnZ.apiZ.what.$get({ query: { name: query.nama } });
 		const resp = await res.json();
 		//console.log(resp);
 		return c.text(resp.msg);
@@ -88,7 +88,7 @@ const routeA = apiA
 		zValidator('query', z.object({ numa: z.number({ coerce: true }).int() })),
 		async (c) => {
 			const query = c.req.valid('query');
-			const res = await clientnZ.apiW.addi.$get({ query: { num: query.numa } });
+			const res = await clientnZ.apiZ.addi.$get({ query: { num: query.numa } });
 			const resp = await res.json();
 			//console.log(resp);
 			const toto = addi(3).toString();
