@@ -6,7 +6,7 @@
 	async function fnZaddi(iNum: number): Promise<string> {
 		let rMsg = 'dbg647: nZ is probablz not running!';
 		try {
-			const res = await clientA.api.addi.$get({ query: { numa: iNum.toString() } });
+			const res = await clientA.api.addi.$get({ query: { numa: iNum } });
 			if (res.ok) {
 				const resp = await res.json();
 				//console.log(resp);
