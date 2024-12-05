@@ -70,5 +70,6 @@ if (esMain(import.meta)) {
 	});
 }
 
-export type tApiZ = typeof routeZ;
+type tApiZ = typeof routeZ;
+export type { tApiZ };
 export { addi, apiZ };
