@@ -10,4 +10,5 @@
 	<li><a href="{base}/searchingAll">searching-all page</a></li>
 	<li><a href="{base}/searching">searching page without button</a></li>
 	<li><a href="{base}/searching2">searching page with button</a></li>
+	<li><a href="{base}/nZaddi">nZ-addi page</a></li>
 </ol>

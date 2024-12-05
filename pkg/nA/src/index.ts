@@ -92,8 +92,8 @@ const routeA = apiA
 			const res = await clientnZ.apiZ.addi.$get({ query: { num: query.numa } });
 			const resp = await res.json();
 			//console.log(resp);
-			const toto = addi(3).toString();
-			return c.text(resp.msg + '   ' + toto);
+			const msg2 = addi(100 + query.numa);
+			return c.json({ msg: resp.msg + ` :: msg2: ${msg2}` });
 		}
 	)
 	.get('/searchAll', async (c) => {
