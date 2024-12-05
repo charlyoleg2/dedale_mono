@@ -1,38 +1,29 @@
-# sv
+Dynamic frontend dedalui
+========================
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+Presentation
+------------
 
-## Creating a project
+This package contains the [sveltekit](https://svelte.dev/) frontend *dedalui*.
 
-If you're seeing this, you've probably already done this step. Congrats!
 
-```bash
-# create a new project in the current directory
-npx sv create
-
-# create a new project in my-app
-npx sv create my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Dev
+---
 
 ```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+git clone https://github.com/charlyoleg2/dedale_mono
+cd dedale_mono
+npm i
+npm -w dedalui run clean
+npm -w dedalui run ci
+npm -w dedalui run preview
+open http://localhost:4173
+npm run test_dedalui
 ```
 
-## Building
+Configuration
+-------------
 
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+*dedalui* can be configured via the file `src/lib/front-config.ts`.
+The backend *nA* can be integrated or not in *sveltekit*.
+*sveltekit* can run as SSR, CSR or prerender.
