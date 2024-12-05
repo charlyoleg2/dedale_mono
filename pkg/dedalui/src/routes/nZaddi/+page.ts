@@ -13,5 +13,5 @@ export async function load({ fetch, url }) {
 		const resp = await res.json();
 		rMsg = resp.msg;
 	}
-	return { msg: rMsg };
+	return { msg: rMsg, fClientA: clientA };
 }
