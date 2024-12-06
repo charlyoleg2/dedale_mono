@@ -59,6 +59,18 @@ npm -w dedalep run build
 npm run dev
 ```
 
+Configurations
+--------------
+
+### Backend configuratiom
+
+Host and port-number of backend nodes are configurable in the file `pkg/back-config/src/index.ts`.
+
+### Frontend configuration
+
+Prerender, SSR, CSR and others are configurable in the file `pkg/dedalui/src/lib/front-config.ts`.
+
+
 Using the backends
 ------------------
 
