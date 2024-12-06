@@ -8,8 +8,8 @@ import { swaggerUI } from '@hono/swagger-ui';
 import { hc } from 'hono/client';
 import esMain from 'es-main';
 import { backCfg } from 'back-config';
-import type { tApiZ } from 'nZ';
-import { addi } from 'nZ';
+//import type { tApiZ } from 'nZ';
+import { addi, preClientZ } from 'nZ';
 import type { tPerson } from './nAroutes.ts';
 import {
 	rtGet_root,
@@ -70,7 +70,7 @@ function db_read_person(name: string): tPerson {
 	return rPerson;
 }
 
-const clientnZ = hc<tApiZ>(`${backCfg.nZ_host}:${backCfg.nZ_port}/`);
+const clientnZ = preClientZ(`${backCfg.nZ_host}:${backCfg.nZ_port}/`);
 
 //const apiA = new Hono();
 const apiA = new OpenAPIHono();
@@ -168,5 +168,9 @@ if (esMain(import.meta)) {
 }
 
 type tApiA = typeof routeA;
-export type { tPerson, tApiA };
-export { addi, apiA };
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+const tmpClientA = hc<tApiA>('');
+type tClientA = typeof tmpClientA;
+const preClientA = (...args: Parameters<typeof hc>): tClientA => hc<tApiA>(...args);
+export type { tPerson, tClientA };
+export { addi, apiA, preClientA };

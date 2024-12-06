@@ -5,6 +5,7 @@ import { serve } from '@hono/node-server';
 //import { z, createRoute, OpenAPIHono } from '@hono/zod-openapi';
 import { OpenAPIHono } from '@hono/zod-openapi';
 import { swaggerUI } from '@hono/swagger-ui';
+import { hc } from 'hono/client';
 import esMain from 'es-main';
 import { backCfg } from 'back-config';
 import { rtGet_root, rtGet_what, rtGet_addi } from './nZroutes.js';
@@ -71,5 +72,9 @@ if (esMain(import.meta)) {
 }
 
 type tApiZ = typeof routeZ;
-export type { tApiZ };
-export { addi, apiZ };
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+const tmpClient = hc<tApiZ>('');
+type tClientZ = typeof tmpClient;
+const preClientZ = (...args: Parameters<typeof hc>): tClientZ => hc<tApiZ>(...args);
+export type { tClientZ };
+export { addi, apiZ, preClientZ };
