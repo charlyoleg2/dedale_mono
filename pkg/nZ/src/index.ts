@@ -19,7 +19,7 @@ const apiZ = new OpenAPIHono();
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 const routeZ = apiZ
-	.basePath('/apiZ')
+	.basePath('/apiZ') // TODO: basePath breaks the generation of the openapi-doc, wait for fix of OpenAPIHono
 	.openapi(rtGet_root, (c) => {
 		return c.text('Hello Hono!');
 	})

@@ -75,7 +75,7 @@ const clientnZ = hc<tApiZ>(`${backCfg.nZ_host}:${backCfg.nZ_port}/`);
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 const routeA = apiA
-	.basePath('/api')
+	.basePath('/api') // TODO: basePath breaks the generation of the openapi-doc, wait for fix of OpenAPIHono
 	.openapi(
 		// '/'
 		rtGet_root,
