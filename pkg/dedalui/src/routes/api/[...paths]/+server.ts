@@ -24,6 +24,6 @@ const POSTout: RequestHandler = async ({ request }) => {
 	return fetch(`${backCfg.nZ_host}:${backCfg.nZ_port}${lurl.pathname}${lurl.search}`, reqOpt);
 };
 
-export const GET: RequestHandler = honoIntegrated.inServer ? GETin : GETout;
-export const POST: RequestHandler = honoIntegrated.inServer ? POSTin : POSTout;
-//export const PUT: RequestHandler = honoIntegrated.inServer ? PUTin : PUTout;
+export const GET: RequestHandler = honoIntegrated.inServerFetch ? GETin : GETout;
+export const POST: RequestHandler = honoIntegrated.inServerFetch ? POSTin : POSTout;
+//export const PUT: RequestHandler = honoIntegrated.inServerFetch ? PUTin : PUTout;

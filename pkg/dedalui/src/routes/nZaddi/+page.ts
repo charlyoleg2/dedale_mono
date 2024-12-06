@@ -7,15 +7,16 @@ import { backCfg } from 'back-config';
 
 /** @type {import('./$types').PageLoad} */
 export async function load({ fetch, url }) {
-	const origin = url.origin;
-	//console.log(`dbg349: origin: ${origin}`);
-	const clientA = hc<tApiA>(origin, { fetch });
+	const target1 = url.origin;
+	const target2 = `${backCfg.nA_host}:${backCfg.nA_port}/`;
+	const target = honoIntegrated.inClientNCors ? target1 : target2;
+	//console.log(`dbg349: target: ${target`);
+	const clientA = hc<tApiA>(target, { fetch });
 	let res: Response;
-	if (honoIntegrated.inClient) {
+	if (honoIntegrated.inClientFetch) {
 		res = await clientA.api.addi.$get({ query: { numa: 13 } });
 	} else {
-		const url =
-			`${backCfg.nA_host}:${backCfg.nA_port}/api/addi?` + new URLSearchParams({ numa: '17' });
+		const url = `${target}api/addi?` + new URLSearchParams({ numa: '17' });
 		res = await fetch(url);
 	}
 
@@ -24,5 +25,5 @@ export async function load({ fetch, url }) {
 		const resp = await res.json();
 		rMsg = resp.msg;
 	}
-	return { msg: rMsg, fClientA: clientA };
+	return { msg: rMsg, target: target, fClientA: clientA };
 }

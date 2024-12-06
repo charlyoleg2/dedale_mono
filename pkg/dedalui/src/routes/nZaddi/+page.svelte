@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { honoIntegrated } from '$lib/front-config';
-	import { backCfg } from 'back-config';
+	//import { backCfg } from 'back-config';
 
 	/** @type {{ data: import('./$types').PageData }} */
 	let { data } = $props();
@@ -10,12 +10,11 @@
 		let rMsg = 'dbg647: nZ is probablz not running!';
 		try {
 			let res: Response;
-			if (honoIntegrated.inClient) {
+			if (honoIntegrated.inClientFetch) {
 				res = await clientA.api.addi.$get({ query: { numa: iNum } });
 			} else {
 				const url =
-					`${backCfg.nA_host}:${backCfg.nA_port}/api/addi?` +
-					new URLSearchParams({ numa: iNum.toString() });
+					`${data.target}api/addi?` + new URLSearchParams({ numa: iNum.toString() });
 				res = await fetch(url);
 			}
 			if (res.ok) {
