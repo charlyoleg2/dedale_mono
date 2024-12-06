@@ -5,5 +5,9 @@ const frontCfg = {
 	ssr: true, // generate complete html on the server side
 	csr: true // if false, remove all javascript of browser
 };
+const honoIntegrated = {
+	inClient: true,
+	inServer: true
+};
 
-export { frontCfg };
+export { frontCfg, honoIntegrated };
