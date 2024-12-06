@@ -6,7 +6,7 @@ const frontCfg = {
 	csr: true // if false, remove all javascript of browser
 };
 const honoIntegrated = {
-	inClient: true,
+	inClient: false,
 	inServer: true
 };
 

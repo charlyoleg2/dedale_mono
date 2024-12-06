@@ -2,6 +2,7 @@ import { serve } from '@hono/node-server';
 //import { Hono } from 'hono';
 //import { z } from 'zod';
 //import { zValidator } from '@hono/zod-validator';
+import { cors } from 'hono/cors';
 import { OpenAPIHono } from '@hono/zod-openapi';
 import { swaggerUI } from '@hono/swagger-ui';
 import { hc } from 'hono/client';
@@ -69,9 +70,13 @@ function db_read_person(name: string): tPerson {
 	return rPerson;
 }
 
+const clientnZ = hc<tApiZ>(`${backCfg.nZ_host}:${backCfg.nZ_port}/`);
+
 //const apiA = new Hono();
 const apiA = new OpenAPIHono();
-const clientnZ = hc<tApiZ>(`${backCfg.nZ_host}:${backCfg.nZ_port}/`);
+// middleware cors must be instanciated before the routes
+//apiA.use('/api/*', cors());
+apiA.use('/*', cors({ origin: ['http://localhost:4173', 'http://localhost:5173'] }));
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 const routeA = apiA
