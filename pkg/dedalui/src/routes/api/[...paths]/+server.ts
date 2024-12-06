@@ -2,8 +2,8 @@
 import { apiA } from 'nA';
 import type { RequestHandler } from '@sveltejs/kit';
 
-export const GET: RequestHandler = ({ request }) => apiA.fetch(request);
-export const POST: RequestHandler = ({ request }) => apiA.fetch(request);
+export const GET: RequestHandler = async ({ request }) => await apiA.fetch(request);
+export const POST: RequestHandler = async ({ request }) => await apiA.fetch(request);
 //export const PUT: RequestHandler = ({ request }) => apiA.fetch(request);
 //export const GET: RequestHandler = async ({ request }) => {
 //	console.log(request);
