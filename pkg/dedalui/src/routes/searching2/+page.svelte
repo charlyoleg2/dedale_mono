@@ -15,7 +15,9 @@
 			if (honoIntegrated.inClient) {
 				res = await clientA.api.search.$get({ query: { letters: iLetters } });
 			} else {
-				const url = `${backCfg.nA_host}:${backCfg.nA_port}/api/search?` + new URLSearchParams({ letters: iLetters });
+				const url =
+					`${backCfg.nA_host}:${backCfg.nA_port}/api/search?` +
+					new URLSearchParams({ letters: iLetters });
 				res = await fetch(url);
 			}
 			if (res.ok) {

@@ -13,7 +13,8 @@ export async function load({ fetch, url }) {
 		clientA = preClientA(origin, { fetch });
 		res = await clientA.api.addi.$get({ query: { numa: 13 } });
 	} else {
-		const url = `${backCfg.nA_host}:${backCfg.nA_port}/api/addi?` + new URLSearchParams({ numa: 17 });
+		const url =
+			`${backCfg.nA_host}:${backCfg.nA_port}/api/addi?` + new URLSearchParams({ numa: 17 });
 		res = await fetch(url);
 	}
 

@@ -13,7 +13,9 @@
 			if (honoIntegrated.inClient) {
 				res = await clientA.api.addi.$get({ query: { numa: iNum } });
 			} else {
-				const url = `${backCfg.nA_host}:${backCfg.nA_port}/api/addi?` + new URLSearchParams({ numa: iNum });
+				const url =
+					`${backCfg.nA_host}:${backCfg.nA_port}/api/addi?` +
+					new URLSearchParams({ numa: iNum });
 				res = await fetch(url);
 			}
 			if (res.ok) {
