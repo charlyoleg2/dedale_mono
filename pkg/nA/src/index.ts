@@ -171,6 +171,7 @@ type tApiA = typeof routeA;
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 const tmpClientA = hc<tApiA>('');
 type tClientA = typeof tmpClientA;
+// surprisingly, sveltekit dislike preClientA. For sveltekit, we must use hc<tApiA>
 const preClientA = (...args: Parameters<typeof hc>): tClientA => hc<tApiA>(...args);
 export type { tPerson, tApiA, tClientA };
 export { addi, apiA, preClientA };

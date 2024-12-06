@@ -1,6 +1,6 @@
-//import type { tClientA } from 'nA';
-//import { hc } from 'hono/client';
-import { preClientA } from 'nA';
+import type { tApiA } from 'nA';
+import { hc } from 'hono/client';
+//import { preClientA } from 'nA';
 import { honoIntegrated } from '$lib/front-config';
 import { backCfg } from 'back-config';
 
@@ -10,7 +10,7 @@ export async function load({ fetch, url }) {
 	if (honoIntegrated.inClient) {
 		const origin = url.origin;
 		//console.log(`dbg349: origin: ${origin}`);
-		const clientA = preClientA(origin, { fetch });
+		const clientA = hc<tApiA>(origin, { fetch });
 		res = await clientA.api.searchAll.$get();
 	} else {
 		const url = `${backCfg.nA_host}:${backCfg.nA_port}/api/searchAll`;

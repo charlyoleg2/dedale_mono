@@ -15,7 +15,7 @@
 			} else {
 				const url =
 					`${backCfg.nA_host}:${backCfg.nA_port}/api/addi?` +
-					new URLSearchParams({ numa: iNum });
+					new URLSearchParams({ numa: iNum.toString() });
 				res = await fetch(url);
 			}
 			if (res.ok) {
