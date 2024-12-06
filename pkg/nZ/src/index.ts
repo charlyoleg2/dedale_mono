@@ -76,5 +76,5 @@ type tApiZ = typeof routeZ;
 const tmpClient = hc<tApiZ>('');
 type tClientZ = typeof tmpClient;
 const preClientZ = (...args: Parameters<typeof hc>): tClientZ => hc<tApiZ>(...args);
-export type { tClientZ };
+export type { tApiZ, tClientZ };
 export { addi, apiZ, preClientZ };

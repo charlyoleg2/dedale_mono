@@ -172,5 +172,5 @@ type tApiA = typeof routeA;
 const tmpClientA = hc<tApiA>('');
 type tClientA = typeof tmpClientA;
 const preClientA = (...args: Parameters<typeof hc>): tClientA => hc<tApiA>(...args);
-export type { tPerson, tClientA };
+export type { tPerson, tApiA, tClientA };
 export { addi, apiA, preClientA };

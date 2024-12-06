@@ -1,7 +1,6 @@
-//import type { tPerson, tClientA } from 'nA';
-import type { tPerson } from 'nA';
-//import { hc } from 'hono/client';
-import { preClientA } from 'nA';
+import type { tPerson, tApiA } from 'nA';
+import { hc } from 'hono/client';
+//import { preClientA } from 'nA';
 import { honoIntegrated } from '$lib/front-config';
 import { backCfg } from 'back-config';
 
@@ -11,7 +10,7 @@ export async function load({ fetch, url, params }) {
 	if (honoIntegrated.inClient) {
 		const origin = url.origin;
 		//console.log(`dbg349: origin: ${origin}`);
-		const clientA = preClientA(origin, { fetch });
+		const clientA = hc<tApiA>(origin, { fetch });
 		res = await clientA.api.perso.$get({ query: { id: params.namus } });
 	} else {
 		const url =
