@@ -31,4 +31,4 @@ export async function load({ fetch, url }) {
 	return { msg: rMsg, target: target, fClientA: clientA };
 }
 
-export const prerender = false; // can not be prerender because of mutative method
+//export const prerender = false; // can not be prerender because of mutative method

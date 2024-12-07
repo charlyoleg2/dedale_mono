@@ -1,7 +1,7 @@
 // front-config.ts
 
 const frontCfg = {
-	prerender: false, // generate html at build time
+	prerender: true, // generate html at build time
 	ssr: true, // generate complete html on the server side
 	csr: true // if false, remove all javascript of browser
 };
@@ -15,7 +15,7 @@ const frontCfg = {
 
 const honoIntegrated = {
 	// inClientNCors: true: hc<tApiA>(origin), hc<tApi>(nA)
-	inClientNCors: true,
+	inClientNCors: false,
 	// inClientNFetch: true: hc<tApiA>(), false: fetch()
 	inClientNFetch: true,
 	// inServerNFetch: true: apiA.fetch, false: fetch(nA)
