@@ -26,3 +26,5 @@ export async function load({ fetch, url, params }) {
 	}
 	return { person: pers };
 }
+
+export const prerender = false; // can not be prerender because no fixed params

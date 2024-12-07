@@ -11,11 +11,13 @@ const frontCfg = {
 // false, true: classic ssr + hydratation
 // false, false: classic csr (skeleton + json browser rendering)
 
+// prerender=true and ssr=true generates lot of compilation errors
+
 const honoIntegrated = {
 	// inClientNCors: true: hc<tApiA>(origin), hc<tApi>(nA)
 	inClientNCors: true,
 	// inClientFetch: true: hc<tApiA>(), false: fetch()
-	inClientFetch: false,
+	inClientFetch: true,
 	// inServerFetch: true: apiA.fetch, false: fetch(nA)
 	inServerFetch: true
 };

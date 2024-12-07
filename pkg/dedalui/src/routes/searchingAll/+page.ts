@@ -26,3 +26,5 @@ export async function load({ fetch, url }) {
 	}
 	return { persons: listPersons };
 }
+
+export const prerender = false; // can not be prerender because of mutative method
