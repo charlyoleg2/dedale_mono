@@ -15,7 +15,7 @@ const honoIntegrated = {
 	// inClientNCors: true: hc<tApiA>(origin), hc<tApi>(nA)
 	inClientNCors: true,
 	// inClientFetch: true: hc<tApiA>(), false: fetch()
-	inClientFetch: true,
+	inClientFetch: false,
 	// inServerFetch: true: apiA.fetch, false: fetch(nA)
 	inServerFetch: true
 };

@@ -8,14 +8,14 @@ import { backCfg } from 'back-config';
 export async function load({ fetch, url }) {
 	let res: Response;
 	const target1 = url.origin;
-	const target2 = `${backCfg.nA_host}:${backCfg.nA_port}/`;
+	const target2 = `${backCfg.nA_host}:${backCfg.nA_port}`;
 	const target = honoIntegrated.inClientNCors ? target1 : target2;
 	//console.log(`dbg349: target: ${target`);
 	if (honoIntegrated.inClientFetch) {
 		const clientA = hc<tApiA>(target, { fetch });
 		res = await clientA.api.searchAll.$get();
 	} else {
-		const url = `${target}api/searchAll`;
+		const url = `${target}/api/searchAll`;
 		res = await fetch(url);
 	}
 

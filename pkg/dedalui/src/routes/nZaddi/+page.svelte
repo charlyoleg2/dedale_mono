@@ -14,7 +14,7 @@
 				res = await clientA.api.addi.$get({ query: { numa: iNum } });
 			} else {
 				const url =
-					`${data.target}api/addi?` + new URLSearchParams({ numa: iNum.toString() });
+					`${data.target}/api/addi?` + new URLSearchParams({ numa: iNum.toString() });
 				res = await fetch(url);
 			}
 			if (res.ok) {

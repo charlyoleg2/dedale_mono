@@ -16,7 +16,7 @@
 				res = await clientA.api.search.$get({ query: { letters: iLetters } });
 			} else {
 				const url =
-					`${data.target}api/search?` + new URLSearchParams({ letters: iLetters });
+					`${data.target}/api/search?` + new URLSearchParams({ letters: iLetters });
 				res = await fetch(url);
 			}
 			if (res.ok) {
