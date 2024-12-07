@@ -19,7 +19,7 @@ const honoIntegrated = {
 	// inClientNFetch: true: hc<tApiA>(), false: fetch()
 	inClientNFetch: true,
 	// inServerNFetch: true: apiA.fetch, false: fetch(nA)
-	inServerNFetch: true
+	inServerNFetch: false
 };
 // inClientCors, inServerFetch
 // true, true: ssr: sveltekit-server -> nZ (1 network transaction)

@@ -24,6 +24,9 @@ export async function load({ fetch, url }) {
 	if (res.ok) {
 		const resp = await res.json();
 		rMsg = resp.msg;
+	} else {
+		console.log('dbg489: res with error');
+		console.log(res);
 	}
 	return { msg: rMsg, target: target, fClientA: clientA };
 }

@@ -11,17 +11,21 @@ const POSTin: RequestHandler = async ({ request }) => await apiA.fetch(request);
 const GETout: RequestHandler = async ({ request }) => {
 	//console.log(request);
 	const lurl = new URL(request.url);
-	return fetch(`${backCfg.nZ_host}:${backCfg.nZ_port}${lurl.pathname}${lurl.search}`);
+	const url = `${backCfg.nA_host}:${backCfg.nA_port}${lurl.pathname}${lurl.search}`;
+	//console.log(`dbg295: url: ${url}`);
+	return fetch(url);
 };
 const POSTout: RequestHandler = async ({ request }) => {
 	//console.log(request);
 	const lurl = new URL(request.url);
+	const url = `${backCfg.nA_host}:${backCfg.nA_port}${lurl.pathname}${lurl.search}`;
+	//console.log(`dbg295: url: ${url}`);
 	const reqOpt = {
 		method: 'POST',
 		headers: { 'Content-Type': 'application/json' },
 		body: request.body
 	};
-	return fetch(`${backCfg.nZ_host}:${backCfg.nZ_port}${lurl.pathname}${lurl.search}`, reqOpt);
+	return fetch(url, reqOpt);
 };
 
 export const GET: RequestHandler = honoIntegrated.inServerNFetch ? GETin : GETout;
