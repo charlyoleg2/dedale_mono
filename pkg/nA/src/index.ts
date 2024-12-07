@@ -3,6 +3,7 @@ import { serve } from '@hono/node-server';
 //import { z } from 'zod';
 //import { zValidator } from '@hono/zod-validator';
 import { cors } from 'hono/cors';
+import { logger } from 'hono/logger';
 import { OpenAPIHono } from '@hono/zod-openapi';
 import { swaggerUI } from '@hono/swagger-ui';
 import { hc } from 'hono/client';
@@ -74,6 +75,7 @@ const clientnZ = preClientZ(`${backCfg.nZ_host}:${backCfg.nZ_port}/`);
 
 //const apiA = new Hono();
 const apiA = new OpenAPIHono();
+apiA.use(logger()); // for logging every request
 // middleware cors must be instanciated before the routes
 //apiA.use('/api/*', cors());
 apiA.use('/*', cors({ origin: ['http://localhost:4173', 'http://localhost:5173'] }));
