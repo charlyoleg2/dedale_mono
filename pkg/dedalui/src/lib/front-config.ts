@@ -16,10 +16,10 @@ const frontCfg = {
 const honoIntegrated = {
 	// inClientNCors: true: hc<tApiA>(origin), hc<tApi>(nA)
 	inClientNCors: true,
-	// inClientFetch: true: hc<tApiA>(), false: fetch()
-	inClientFetch: true,
-	// inServerFetch: true: apiA.fetch, false: fetch(nA)
-	inServerFetch: true
+	// inClientNFetch: true: hc<tApiA>(), false: fetch()
+	inClientNFetch: true,
+	// inServerNFetch: true: apiA.fetch, false: fetch(nA)
+	inServerNFetch: true
 };
 // inClientCors, inServerFetch
 // true, true: ssr: sveltekit-server -> nZ (1 network transaction)

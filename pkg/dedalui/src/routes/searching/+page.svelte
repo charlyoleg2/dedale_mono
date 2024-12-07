@@ -11,7 +11,7 @@
 		let rPersons: string[] = [];
 		try {
 			let res: Response;
-			if (honoIntegrated.inClientFetch) {
+			if (honoIntegrated.inClientNFetch) {
 				res = await clientA.api.search.$get({ query: { letters: iLetters } });
 			} else {
 				const url =

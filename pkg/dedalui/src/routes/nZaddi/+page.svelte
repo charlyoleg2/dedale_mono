@@ -10,7 +10,7 @@
 		let rMsg = 'dbg647: nZ is probablz not running!';
 		try {
 			let res: Response;
-			if (honoIntegrated.inClientFetch) {
+			if (honoIntegrated.inClientNFetch) {
 				res = await clientA.api.addi.$get({ query: { numa: iNum } });
 			} else {
 				const url =

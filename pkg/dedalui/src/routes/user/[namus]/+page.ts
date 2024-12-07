@@ -11,7 +11,7 @@ export async function load({ fetch, url, params }) {
 	const target2 = `${backCfg.nA_host}:${backCfg.nA_port}`;
 	const target = honoIntegrated.inClientNCors ? target1 : target2;
 	//console.log(`dbg349: target: ${target`);
-	if (honoIntegrated.inClientFetch) {
+	if (honoIntegrated.inClientNFetch) {
 		const clientA = hc<tApiA>(target, { fetch });
 		res = await clientA.api.perso.$get({ query: { id: params.namus } });
 	} else {

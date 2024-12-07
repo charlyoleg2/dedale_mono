@@ -13,7 +13,7 @@ export async function load({ fetch, url }) {
 	//console.log(`dbg349: target: ${target`);
 	const clientA = hc<tApiA>(target, { fetch });
 	let res: Response;
-	if (honoIntegrated.inClientFetch) {
+	if (honoIntegrated.inClientNFetch) {
 		res = await clientA.api.addi.$get({ query: { numa: 13 } });
 	} else {
 		const url = `${target}/api/addi?` + new URLSearchParams({ numa: '17' });
