@@ -77,8 +77,8 @@ const clientnZ = preClientZ(`${backCfg.nZ_host}:${backCfg.nZ_port}/`);
 const apiA = new OpenAPIHono();
 apiA.use(logger()); // for logging every request
 // middleware cors must be instanciated before the routes
-//apiA.use('/api/*', cors());
-apiA.use('/*', cors({ origin: ['http://localhost:4173', 'http://localhost:5173'] }));
+apiA.use('/api/*', cors());
+//apiA.use('/*', cors({ origin: ['http://localhost:4173', 'http://localhost:5173'] }));
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 const routeA = apiA
