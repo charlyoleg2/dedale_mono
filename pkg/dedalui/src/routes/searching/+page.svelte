@@ -21,6 +21,9 @@
 			if (res.ok) {
 				const resp = await res.json();
 				rPersons = resp.list;
+			} else {
+				console.log('dbg893: res with errors');
+				console.log(res);
 			}
 		} catch (error) {
 			console.error(error);

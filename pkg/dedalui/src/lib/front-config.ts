@@ -1,8 +1,8 @@
 // front-config.ts
 
 const frontCfg = {
-	prerender: false, // generate html at build time
-	ssr: true, // generate complete html on the server side
+	prerender: true, // generate html at build time
+	ssr: false, // generate complete html on the server side
 	csr: true // if false, remove all javascript of browser
 };
 // prerender, ssr
@@ -19,7 +19,7 @@ const honoIntegrated = {
 	// inClientNFetch: true: hc<tApiA>(), false: fetch()
 	inClientNFetch: true,
 	// inServerNFetch: true: apiA.fetch, false: fetch(nA)
-	inServerNFetch: false
+	inServerNFetch: true
 };
 // inClientCors, inServerFetch
 // true, true: ssr: sveltekit-server -> nZ (1 network transaction)
