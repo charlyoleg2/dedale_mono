@@ -12,6 +12,7 @@ const frontCfg = {
 // false, false: classic csr (skeleton + json browser rendering)
 
 // prerender=true and ssr=true generates lot of compilation errors
+// but prerender=true, ssr=true and inClientNCors=false works
 
 const honoIntegrated = {
 	// inClientNCors: true: hc<tApiA>(origin), hc<tApi>(nA)
