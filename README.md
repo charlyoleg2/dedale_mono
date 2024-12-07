@@ -5,6 +5,8 @@ Dedale\_mono
 Presentation
 ------------
 
+The purpose of the project *Dedale* is to experiment the integration of [svelteKit](https://svelte.dev/) and [hono](https://hono.dev/). Editing the file `pkg/dedalui/src/lib/front-config.ts`, let you expiriment the *prerender*, *ssr*, *csr* configurations. This front-end configuration provides up to 64 combinations.
+
 This is a monorepo that contains the following *javascript* packages:
 
 1. nA: the entry-front of the *dedale* backend
