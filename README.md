@@ -5,9 +5,9 @@ Dedale\_mono
 Presentation
 ------------
 
-The purpose of the project *Dedale* is to experiment different integrations of frontend-frameworks and hono:
-- [svelteKit](https://svelte.dev/) and [hono](https://hono.dev/)
-- [astro](https://astro.build) and [hono](https://hono.dev/)
+The purpose of the project *Dedale* is to experiment different integrations of frontend-frameworks and [hono](https://hono.dev/):
+- [svelteKit](https://svelte.dev/) and *hono*
+- [astro](https://astro.build) and *hono*
 
 
 This is a monorepo that contains the following *javascript* packages:
