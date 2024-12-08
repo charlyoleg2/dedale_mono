@@ -5,7 +5,10 @@ Dedale\_mono
 Presentation
 ------------
 
-The purpose of the project *Dedale* is to experiment the integration of [svelteKit](https://svelte.dev/) and [hono](https://hono.dev/). Editing the file `pkg/dedalui/src/lib/front-config.ts`, let you expiriment the *prerender*, *ssr*, *csr* configurations. This front-end configuration provides up to 64 combinations.
+The purpose of the project *Dedale* is to experiment the different integration:
+- [svelteKit](https://svelte.dev/) and [hono](https://hono.dev/)
+- [astro](https://astro.build) and [hono](https://hono.dev/)
+
 
 This is a monorepo that contains the following *javascript* packages:
 
@@ -31,6 +34,20 @@ Below an example of a more distributed backend for a large application with many
 
 A public instance of *dedalep* is available on that [github-page](https://charlyoleg2.github.io/dedale_mono/).
 The *code source* is available on [github](https://github.com/charlyoleg2/dedale_mono).
+
+
+Outcomes of experimentations
+----------------------------
+
+### SvelteKit / Hono
+
+Editing the file `pkg/dedalui/src/lib/front-config.ts`, let you expiriment the *prerender*, *ssr*, *csr* configurations.
+This front-end configuration provides up to 64 combinations.
+
+For getting a static website with *Sveltekit*, I see two limitations:
+- *Hono* can not be integrated. *Hono* must be accessed with *fetch*.
+- *Sveltekit-csr* must be set to false to avoid the hydratation. But then all *javascript* of client is gone!
+
 
 
 Prerequisite
