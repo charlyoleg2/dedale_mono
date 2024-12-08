@@ -27,4 +27,13 @@ export async function load({ fetch, url, params }) {
 	return { person: pers };
 }
 
+/** @type {import('./$types').EntryGenerator} */
+export function entries() {
+	return [
+		{ namus: 'paul' },
+		{ namus: 'joseph' },
+		{ namus: 'thierry' }
+	];
+}
+
 export const prerender = false; // can not be prerender because no fixed params
