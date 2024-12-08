@@ -1,7 +1,7 @@
 // front-config.ts
 
 const frontCfg = {
-	prerender: true, // generate html at build time
+	prerender: false, // generate html at build time
 	ssr: true, // generate complete html on the server side
 	csr: true // if false, remove all javascript of browser
 };
