@@ -5,7 +5,7 @@ Dedale\_mono
 Presentation
 ------------
 
-The purpose of the project *Dedale* is to experiment the different integration:
+The purpose of the project *Dedale* is to experiment different integrations of frontend-frameworks and hono:
 - [svelteKit](https://svelte.dev/) and [hono](https://hono.dev/)
 - [astro](https://astro.build) and [hono](https://hono.dev/)
 
