@@ -32,11 +32,11 @@ export const GET: RequestHandler = honoIntegrated.inServerNFetch ? GETin : GETou
 //export const POST: RequestHandler = honoIntegrated.inServerNFetch ? POSTin : POSTout;
 //export const PUT: RequestHandler = honoIntegrated.inServerNFetch ? PUTin : PUTout;
 
-/** @type {import('./$types').EntryGenerator} */
-export function entries() {
-	return [
-		{ paths: 'searchAll' }
-		//{ paths: 'addi' }
-	];
-}
+///** @type {import('./$types').EntryGenerator} */
+//export function entries() {
+//	return [
+//		{ paths: 'searchAll' }
+//		//{ paths: 'addi' }
+//	];
+//}
 //export const prerender = true; // +server.ts prerender doesnot inherit from +layout.ts
