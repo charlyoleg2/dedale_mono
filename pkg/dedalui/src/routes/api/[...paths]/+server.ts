@@ -39,4 +39,4 @@ export function entries() {
 		//{ paths: 'addi' }
 	];
 }
-export const prerender = true; // +server.ts prerender doesnot inherit from +layout.ts
+//export const prerender = true; // +server.ts prerender doesnot inherit from +layout.ts
