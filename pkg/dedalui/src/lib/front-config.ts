@@ -3,7 +3,7 @@
 const frontCfg = {
 	prerender: true, // generate html at build time
 	ssr: true, // generate complete html on the server side
-	csr: true // if false, remove all javascript of browser
+	csr: false // if false, remove all javascript of browser
 };
 // prerender, ssr
 // true, true: many pages prepared for static-website

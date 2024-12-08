@@ -28,3 +28,4 @@ export async function load({ fetch, url }) {
 }
 
 //export const prerender = false; // can not be prerender because of mutative method
+//export const csr = false; // false  for disabling hydratation i.e. enabling full-page-load !!! Oops doesn't seem to work
