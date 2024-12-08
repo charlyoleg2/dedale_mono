@@ -10,7 +10,7 @@ The purpose of the project *Dedale* is to experiment different integrations of f
 - [astro](https://astro.build) and *hono*
 
 
-This is a monorepo that contains the following *javascript* packages:
+*Dedale\_mono* is a monorepo that contains the following *javascript* packages:
 
 1. nA: the entry-front of the *dedale* backend
 2. nZ: a micro-service for other processing
@@ -45,9 +45,10 @@ Editing the file `pkg/dedalui/src/lib/front-config.ts`, let you expiriment the *
 This front-end configuration provides up to 64 combinations.
 
 For getting a static website with *Sveltekit*, I see two limitations:
-- *Hono* can not be integrated. *Hono* must be accessed with *fetch*.
+- *Hono* can not be integrated. *Hono* must be accessed with *fetch* (By the way, *Hono* integration works well is not prerendered).
 - *Sveltekit-csr* must be set to false to avoid the hydratation. But then all *javascript* of client is gone!
 
+With *sveltekit v2.9.0*, I don't find a way to disable *hydratation* without removing the all *javascript* of client.
 
 
 Prerequisite
