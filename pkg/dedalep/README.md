@@ -1,6 +1,12 @@
 Static frontend dedalep
 =======================
 
+Depreciated
+-----------
+
+This package *Dedalep* is depreciated. The experience of *Sveltekit* with *adapter-static* integrated with *Hono* has been tested in *Dedalui* and was not conclusive. The next experiemnt is *Dedalas* that combines *Astro* and *Hono*.
+
+
 Presentation
 ------------
 
