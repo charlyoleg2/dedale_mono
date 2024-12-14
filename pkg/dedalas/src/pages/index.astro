@@ -1,11 +1,29 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
+import { backCfg } from 'back-config';
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-<Layout>
-	<Welcome />
+<Layout title="Welcome to Dedalas">
+	<h1>Welcome to Dedalas</h1>
+	<p>The static pages of Dedale</p>
+
+	<h2>Documentation</h2>
+	<ol>
+		<li><a href="/docs/scalability">Software scalability</a></li>
+		<li><a href="/docs/apidoc/" rel="external">TypeDoc</a></li>
+	</ol>
+
+	<h2>Swagger UI</h2>
+	<ol>
+		<li>
+			<a href={`${backCfg.nA_host}:${backCfg.nA_port}/swagger`} rel="external">swagger-ui of nA</a>
+		</li>
+		<li>
+			<a href={`${backCfg.nZ_host}:${backCfg.nZ_port}/swagger`} rel="external">swagger-ui of nZ</a>
+		</li>
+	</ol>
+
+	<h2>SSG pages</h2>
+
 </Layout>

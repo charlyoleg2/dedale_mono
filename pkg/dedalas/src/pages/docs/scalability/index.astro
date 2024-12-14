@@ -1,0 +1,116 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import { Image } from 'astro:assets';
+const title = 'Software scalability';
+import svgHardwareProcessing from '../../../svg/hardware_processing.svg';
+---
+
+<Layout title={title}>
+
+<h1>{title}</h1>
+
+<h2>Hardware issue</h2>
+
+<figure>
+	<Image src=svgHardwareProcessing alt="hardware_processing.svg" />
+	<figcaption>Hardware processing unit</figcaption>
+</figure>
+
+<!--
+<figure>
+	<Image src="../../../../svg/hardware_processing_limitation.svg" alt="hardware_processing_limitation.svg" />
+	<figcaption>Hardware processing limitation</figcaption>
+</figure>
+<figure>
+	<Image src="../../../../svg/hardware_processing_distributed.svg" alt="hardware_processing_distributed.svg" />
+	<figcaption>Distributed hardware processing</figcaption>
+</figure>
+
+
+<h2>Distributed processing</h2>
+
+<figure>
+	<Image src="../../../../svg/software_scaling.svg" alt="software_scaling.svg" />
+	<figcaption>How software can scale?</figcaption>
+</figure>
+<figure>
+	<Image src="../../../../svg/distributed_backend.svg" alt="distributed_backend.svg" />
+	<figcaption>An example of distributed backend</figcaption>
+</figure>
+<figure>
+	<Image src="../../../../jpg/raspberry_rack.jpg" alt="" raspberry_rack.jpg/>
+	<figcaption>A rack of RaspberryPi</figcaption>
+</figure>
+
+
+<h2>Page processing</h2>
+
+<h3>Processing options</h3>
+
+<figure>
+	<Image src="../../../../svg/page_processing.svg" alt="page_processing.svg" />
+	<figcaption>Options for page processing</figcaption>
+</figure>
+
+<h3>Sequence diagrams</h3>
+
+<figure>
+	<Image src="../../../../svg/sequence_ssg.svg" alt="sequence_ssg.svg" />
+	<figcaption>Server Side Generation</figcaption>
+</figure>
+<figure>
+	<Image src="../../../../svg/sequence_ssr.svg" alt="sequence_ssr.svg" />
+	<figcaption>Server Side Rendering</figcaption>
+</figure>
+<figure>
+	<Image src="../../../../svg/sequence_csr.svg" alt="sequence_csr.svg" />
+	<figcaption>Client Side Rendering</figcaption>
+</figure>
+
+<h3>SvelteKit / Hono integration</h3>
+
+<figure>
+	<Image src="../../../../svg/flow_options.svg" alt="flow_options.svg" />
+	<figcaption>Options for svelteKit-hono integration</figcaption>
+</figure>
+<figure>
+	<Image src="../../../../svg/flow_ssg.svg" alt="flow_ssg.svg" />
+	<figcaption>Server Side Generation</figcaption>
+</figure>
+<figure>
+	<Image src="../../../../svg/flow_ssr.svg" alt="flow_ssr.svg" />
+	<figcaption>Server Side Rendering</figcaption>
+</figure>
+<figure>
+	<Image src="../../../../svg/flow_csr.svg" alt="flow_csr.svg" />
+	<figcaption>Client Side Rendering with integrated node-A</figcaption>
+</figure>
+<figure>
+	<Image src="../../../../svg/flow_csr2.svg" alt="flow_csr2.svg" />
+	<figcaption>Client Side Rendering with independant node-A</figcaption>
+</figure>
+
+*Nodejs* enables running the same *javascript* code on the server and in the browser.
+This enables *frontend frameworks* like [svelteKit](https://svelte.dev/docs/kit/introduction) where *SSR* and *CSR* can be easily exchanged.
+If the *backend framework* (e.g. [hono](https://hono.dev/)) is also in *javascript*, it can be integrated/imported into the *frontend framework*.
+
+<figure>
+	<Image src="../../../../svg/software_life_cycle.svg" alt="software_life_cycle.svg" />
+	<figcaption>Software lifecycle</figcaption>
+</figure>
+
+-->
+
+</Layout>
+
+<style>
+	figure {
+		display: inline-block;
+		margin: 3rem;
+	}
+	figure > figcaption {
+		font-style: italic;
+		text-align: center;
+	}
+
+</style>
