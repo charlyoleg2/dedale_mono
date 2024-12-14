@@ -2,12 +2,18 @@
 import Layout from '../../layouts/Layout.astro';
 
 const title = 'SSG page : searchAll';
+const persons = ['aaa', 'bbb', 'ccc'];
 ---
 
 <Layout title={title}>
 	<article>
-		<h1>{title}</h1>
 
+		<h1>{title}</h1>
+		<ol>
+			{persons.map((item, idx) => (
+				<li>{item} [{idx}]</li>
+			))}
+		</ol>
 
 	</article>
 </Layout>
