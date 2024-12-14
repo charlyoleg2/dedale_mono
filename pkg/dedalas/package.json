@@ -8,6 +8,7 @@
 		"preview": "astro preview",
 		"astro": "astro",
 		"ci": "run-s build",
+		"github-pages-fix": "touch dist/.nojekyll",
 		"clean": "rimraf .astro dist node_modules"
 	},
 	"dependencies": {

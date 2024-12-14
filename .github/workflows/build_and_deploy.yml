@@ -37,12 +37,12 @@ jobs:
                   BASE_PATH: ${{ github.event.repository.name }}
               run: |
                   npm run ci
-                  npm -w dedalep run github-pages-fix
+                  npm -w dedalas run github-pages-fix
 
             - name: Deploy to GitHub pages
               uses: crazy-max/ghaction-github-pages@v4
               with:
                   target_branch: gh-pages
-                  build_dir: pkg/dedalep/build
+                  build_dir: pkg/dedalas/dist
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

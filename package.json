@@ -69,7 +69,7 @@
 		"cp_apidoc": "fse copy build/apidoc pkg/dedalas/dist/docs/apidoc",
 		"apidoc": "run-s gen_apidoc cp_apidoc",
 		"serve_apidoc": "serve build/apidoc",
-		"serve_dedalas": "serve pkg/dedalas/build",
+		"serve_dedalas": "serve pkg/dedalas/dist",
 		"ls-workspaces": "npm -ws exec -c pwd",
 		"ls-pkg": "ls -la pkg"
 	},
