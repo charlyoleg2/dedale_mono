@@ -106,9 +106,11 @@ const title = 'Software scalability';
 			<figcaption>Client Side Rendering with independant node-A</figcaption>
 		</figure>
 
-		*Nodejs* enables running the same *javascript* code on the server and in the browser.
-		This enables *frontend frameworks* like [svelteKit](https://svelte.dev/docs/kit/introduction) where *SSR* and *CSR* can be easily exchanged.
-		If the *backend framework* (e.g. [hono](https://hono.dev/)) is also in *javascript*, it can be integrated/imported into the *frontend framework*.
+		<p>
+		<i>Nodejs</i> enables running the same <i>javascript</i> code on the server and in the browser.
+		This enables <i>frontend frameworks</i> like <a href="https://svelte.dev/docs/kit/introduction">svelteKit</a> where <i>SSR</i> and <i>CSR</i> can be easily exchanged.
+		If the <i>backend framework</i> (e.g. <a href="https://hono.dev/">hono</a>) is also in <i>javascript</i>, it can be integrated/imported into the <i>frontend framework</i>.
+		</p>
 
 		<figure>
 			<Image src={svgSoftwareLifeCycle} alt="software_life_cycle.svg" />
@@ -121,6 +123,15 @@ const title = 'Software scalability';
 <style>
 	article {
 		margin-left: 2rem;
+	}
+	h1 {
+		font-size: 2rem;
+	}
+	h2 {
+		font-size: 1.6rem;
+	}
+	h3 {
+		font-size: 1.3rem;
 	}
 	figure {
 		display: inline-block;
