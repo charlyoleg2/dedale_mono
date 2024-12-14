@@ -1,6 +1,8 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import { backCfg } from "back-config";
+
+const base = import.meta.env.BASE_URL;
 ---
 
 <Layout title="Welcome to Dedalas">
@@ -9,8 +11,8 @@ import { backCfg } from "back-config";
 
 	<h2>Documentation</h2>
 	<ol>
-		<li><a href="/docs/scalability">Software scalability</a></li>
-		<li><a href="/docs/apidoc/" rel="external">TypeDoc</a></li>
+		<li><a href=`${base}/docs/scalability`>Software scalability</a></li>
+		<li><a href=`${base}/docs/apidoc/` rel="external">TypeDoc</a></li>
 	</ol>
 
 	<h2>Swagger UI</h2>
@@ -31,7 +33,7 @@ import { backCfg } from "back-config";
 
 	<h2>SSG pages</h2>
 	<ol>
-		<li><a href="/ssg/pageSearchAll">searchAll</a></li>
-		<li><a href="/ssg/pageSearchAll">searchAll2</a></li>
+		<li><a href=`${base}/ssg/pageSearchAll`>searchAll</a></li>
+		<li><a href=`${base}/ssg/pageSearchAll`>searchAll2</a></li>
 	</ol>
 </Layout>
