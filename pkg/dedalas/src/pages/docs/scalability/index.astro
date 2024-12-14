@@ -1,30 +1,29 @@
 ---
-import Layout from '../../../layouts/Layout.astro';
-import { Image } from 'astro:assets';
+import Layout from "../../../layouts/Layout.astro";
+import { Image } from "astro:assets";
 
-import svgHardwareProcessing from './_svg/hardware_processing.svg';
-import svgHardwareProcessingLimitation from './_svg/hardware_processing_limitation.svg';
-import svgHardwareProcessingDistributed from './_svg/hardware_processing_distributed.svg';
-import svgSoftwareScaling from './_svg/software_scaling.svg';
-import svgDistributedBackend from './_svg/distributed_backend.svg';
-import jpgRaspberryRack from '../../../assets/jpg/raspberry_rack.jpg';
-import svgPageProcessing from './_svg/page_processing.svg';
-import svgSequenceSsg from './_svg/sequence_ssg.svg';
-import svgSequenceSsr from './_svg/sequence_ssr.svg';
-import svgSequenceCsr from './_svg/sequence_csr.svg';
-import svgFlowOptions from './_svg/flow_options.svg';
-import svgFlowSsg from './_svg/flow_ssg.svg';
-import svgFlowSsr from './_svg/flow_ssr.svg';
-import svgFlowCsr from './_svg/flow_csr.svg';
-import svgFlowCsr2 from './_svg/flow_csr2.svg';
-import svgSoftwareLifeCycle from './_svg/software_life_cycle.svg';
+import svgHardwareProcessing from "./_svg/hardware_processing.svg";
+import svgHardwareProcessingLimitation from "./_svg/hardware_processing_limitation.svg";
+import svgHardwareProcessingDistributed from "./_svg/hardware_processing_distributed.svg";
+import svgSoftwareScaling from "./_svg/software_scaling.svg";
+import svgDistributedBackend from "./_svg/distributed_backend.svg";
+import jpgRaspberryRack from "../../../assets/jpg/raspberry_rack.jpg";
+import svgPageProcessing from "./_svg/page_processing.svg";
+import svgSequenceSsg from "./_svg/sequence_ssg.svg";
+import svgSequenceSsr from "./_svg/sequence_ssr.svg";
+import svgSequenceCsr from "./_svg/sequence_csr.svg";
+import svgFlowOptions from "./_svg/flow_options.svg";
+import svgFlowSsg from "./_svg/flow_ssg.svg";
+import svgFlowSsr from "./_svg/flow_ssr.svg";
+import svgFlowCsr from "./_svg/flow_csr.svg";
+import svgFlowCsr2 from "./_svg/flow_csr2.svg";
+import svgSoftwareLifeCycle from "./_svg/software_life_cycle.svg";
 
-const title = 'Software scalability';
+const title = "Software scalability";
 ---
 
 <Layout title={title}>
 	<article>
-
 		<h1>{title}</h1>
 
 		<h2>Hardware issue</h2>
@@ -34,14 +33,19 @@ const title = 'Software scalability';
 			<figcaption>Hardware processing unit</figcaption>
 		</figure>
 		<figure>
-			<Image src={svgHardwareProcessingLimitation} alt="hardware_processing_limitation.svg" />
+			<Image
+				src={svgHardwareProcessingLimitation}
+				alt="hardware_processing_limitation.svg"
+			/>
 			<figcaption>Hardware processing limitation</figcaption>
 		</figure>
 		<figure>
-			<Image src={svgHardwareProcessingDistributed} alt="hardware_processing_distributed.svg" />
+			<Image
+				src={svgHardwareProcessingDistributed}
+				alt="hardware_processing_distributed.svg"
+			/>
 			<figcaption>Distributed hardware processing</figcaption>
 		</figure>
-
 
 		<h2>Distributed processing</h2>
 
@@ -54,10 +58,9 @@ const title = 'Software scalability';
 			<figcaption>An example of distributed backend</figcaption>
 		</figure>
 		<figure>
-			<Image src={jpgRaspberryRack} alt="" raspberry_rack.jpg/>
+			<Image src={jpgRaspberryRack} alt="" raspberry_rack.jpg />
 			<figcaption>A rack of RaspberryPi</figcaption>
 		</figure>
-
 
 		<h2>Page processing</h2>
 
@@ -99,24 +102,32 @@ const title = 'Software scalability';
 		</figure>
 		<figure>
 			<Image src={svgFlowCsr} alt="flow_csr.svg" />
-			<figcaption>Client Side Rendering with integrated node-A</figcaption>
+			<figcaption>
+				Client Side Rendering with integrated node-A
+			</figcaption>
 		</figure>
 		<figure>
 			<Image src={svgFlowCsr2} alt="flow_csr2.svg" />
-			<figcaption>Client Side Rendering with independant node-A</figcaption>
+			<figcaption>
+				Client Side Rendering with independant node-A
+			</figcaption>
 		</figure>
 
 		<p>
-		<i>Nodejs</i> enables running the same <i>javascript</i> code on the server and in the browser.
-		This enables <i>frontend frameworks</i> like <a href="https://svelte.dev/docs/kit/introduction">svelteKit</a> where <i>SSR</i> and <i>CSR</i> can be easily exchanged.
-		If the <i>backend framework</i> (e.g. <a href="https://hono.dev/">hono</a>) is also in <i>javascript</i>, it can be integrated/imported into the <i>frontend framework</i>.
+			<i>Nodejs</i> enables running the same <i>javascript</i> code on the
+			server and in the browser. This enables <i>frontend frameworks</i> like
+			<a href="https://svelte.dev/docs/kit/introduction">svelteKit</a> where
+			<i>SSR</i> and <i>CSR</i> can be easily exchanged. If the <i
+				>backend framework</i
+			> (e.g. <a href="https://hono.dev/">hono</a>) is also in <i
+				>javascript</i
+			>, it can be integrated/imported into the <i>frontend framework</i>.
 		</p>
 
 		<figure>
 			<Image src={svgSoftwareLifeCycle} alt="software_life_cycle.svg" />
 			<figcaption>Software lifecycle</figcaption>
 		</figure>
-
 	</article>
 </Layout>
 
@@ -141,5 +152,4 @@ const title = 'Software scalability';
 		font-style: italic;
 		text-align: center;
 	}
-
 </style>
