@@ -25,6 +25,7 @@ async function myload(): string[] {
 			//const clientA = hc<tApiA>(Astro); // inspired by https://docs.astro.build/en/recipes/call-endpoints/
 			res = await clientA.api.searchAll.$get();
 		} else {
+			//res = await GET(new Request("/api/searchAll"));
 			res = await GET({
 				...Astro,
 				params: { path: "searchAll" },
