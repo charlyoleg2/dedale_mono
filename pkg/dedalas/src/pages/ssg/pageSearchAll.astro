@@ -46,8 +46,8 @@ async function myload(): string[] {
 }
 
 const title = "SSG page : searchAll";
-//const persons = ["aaa", "bbb", "ccc"];
-const persons = await myload();
+const persons = ["aaa", "bbb", "ccc"];
+//const persons = await myload(); // TODO: uncomment for testing hono-integration
 ---
 
 <Layout title={title}>
