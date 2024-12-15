@@ -15,6 +15,7 @@ async function myload(): string[] {
 	//console.log(`dbg349: target: ${target`);
 	if (honoIntegrated_nFetch) {
 		const clientA = hc<tApiA>(target);
+		//const clientA = hc<tApiA>(Astro); // inspired by https://docs.astro.build/en/recipes/call-endpoints/
 		res = await clientA.api.searchAll.$get();
 	} else {
 		const url = `${target}/api/searchAll`;
