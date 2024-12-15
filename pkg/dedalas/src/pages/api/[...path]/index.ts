@@ -5,7 +5,7 @@ import { apiA } from "nA";
 import type { APIRoute } from "astro";
 
 // configuration of integration of Hono
-const honoIntegrated = true; // true: no network call; false: hono must run during the build time
+const honoIntegrated = false; // true: no network call; false: hono must run during the build time
 
 // sub-function for writing url
 const base = import.meta.env.BASE_URL;
