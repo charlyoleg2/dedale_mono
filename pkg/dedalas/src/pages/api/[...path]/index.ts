@@ -3,11 +3,13 @@
 import { backCfg } from "back-config";
 import { apiA } from "nA";
 import type { APIRoute } from "astro";
+import { honoIntegrated } from "../../../lib/front-config.js";
 
 // configuration of integration of Hono
-const honoIntegrated = true; // true: no network call; false: hono must run during the build time
-// output=static and honoIntegrated=false doesn't work because of immutable issue
-// output=server and honoIntegrated=false works
+//const honoIntegratedApi = true; // true: no network call; false: hono must run during the build time
+// output=static and honoIntegratedApi=false doesn't work because of immutable issue
+// output=server and honoIntegratedApi=false works
+const honoIntegratedApi = honoIntegrated.inServerNFetch;
 
 // sub-function for writing url
 const base = import.meta.env.BASE_URL;
@@ -42,7 +44,7 @@ const GETout: RequestHandler = async ({ request }) => {
 };
 
 //export const ALL: APIRoute = (context) => app.fetch(context.request);
-export const GET: APIRoute = honoIntegrated ? GETin : GETout;
+export const GET: APIRoute = honoIntegratedApi ? GETin : GETout;
 
 export function getStaticPaths() {
 	return [{ params: { path: "searchAll" } }];

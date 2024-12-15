@@ -3,9 +3,12 @@ import Layout from "../../layouts/Layout.astro";
 import type { tApiA } from "nA";
 import { hc } from "hono/client";
 import { backCfg } from "back-config";
+import { honoIntegrated } from "../../lib/front-config.js";
 
-const honoIntegrated_nCors = true;
-const honoIntegrated_nFetch = true;
+//const honoIntegrated_nCors = true;
+//const honoIntegrated_nFetch = true;
+const honoIntegrated_nCors = honoIntegrated.inClientNCors;
+const honoIntegrated_nFetch = honoIntegrated.inClientNFetch;
 
 async function myload(): string[] {
 	let res: Response;
