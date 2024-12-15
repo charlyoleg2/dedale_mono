@@ -1,8 +1,37 @@
 ---
 import Layout from "../../layouts/Layout.astro";
+import type { tApiA } from "nA";
+import { hc } from "hono/client";
+import { backCfg } from "back-config";
+
+const honoIntegrated_nCors = true;
+const honoIntegrated_nFetch = true;
+
+async function myload(): string[] {
+	let res: Response;
+	const target1 = Astro.url.origin;
+	const target2 = `${backCfg.nA_host}:${backCfg.nA_port}`;
+	const target = honoIntegrated_nCors ? target1 : target2;
+	//console.log(`dbg349: target: ${target`);
+	if (honoIntegrated_nFetch) {
+		const clientA = hc<tApiA>(target);
+		res = await clientA.api.searchAll.$get();
+	} else {
+		const url = `${target}/api/searchAll`;
+		res = await fetch(url);
+	}
+
+	const rListPersons: string[] = [];
+	if (res.ok) {
+		const resp = await res.json();
+		rListPersons.push(...resp.list);
+	}
+	return rListPersons;
+}
 
 const title = "SSG page : searchAll";
 const persons = ["aaa", "bbb", "ccc"];
+//const persons = myload();
 ---
 
 <Layout title={title}>
