@@ -27,7 +27,9 @@ async function myload(): string[] {
 		} else {
 			res = await GET({
 				...Astro,
-				params: { path: "api/searchAll" },
+				params: { path: "searchAll" },
+				url: '/api/searchAll',
+				method: 'GET'
 			});
 		}
 	} else {

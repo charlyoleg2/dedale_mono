@@ -18,6 +18,9 @@ const honoIntegrated = {
 // false, true, true, true : works
 // false, false, true, true : works
 // false, false, true, false : compile error: immutable
+// true, true, false, true : compile error: HonoOpenApi read undefined property 'method'
+
+// Astro lacks the equivalent of SvelteKite +page.ts load() universal code to call endpoints without network
 
 // As reminder, the svelteKit universal +page.ts-load() offer more options:
 // inClientCors, inServerFetch
