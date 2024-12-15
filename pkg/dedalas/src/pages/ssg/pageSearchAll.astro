@@ -2,13 +2,16 @@
 import Layout from "../../layouts/Layout.astro";
 import type { tApiA } from "nA";
 import { hc } from "hono/client";
+import { GET } from "../api/[...path]/index.ts";
 import { backCfg } from "back-config";
-import { honoIntegrated } from "../../lib/front-config.js";
+import { honoIntegrated } from "../../lib/front-config.ts";
 
 //const honoIntegrated_nCors = true;
 //const honoIntegrated_nFetch = true;
+//const honoIntegrated_nAstroGet = true;
 const honoIntegrated_nCors = honoIntegrated.inClientNCors;
 const honoIntegrated_nFetch = honoIntegrated.inClientNFetch;
+const honoIntegrated_nAstroGet = honoIntegrated.inClientNAstroGet;
 
 async function myload(): string[] {
 	let res: Response;
@@ -17,9 +20,16 @@ async function myload(): string[] {
 	const target = honoIntegrated_nCors ? target1 : target2;
 	//console.log(`dbg349: target: ${target`);
 	if (honoIntegrated_nFetch) {
-		const clientA = hc<tApiA>(target);
-		//const clientA = hc<tApiA>(Astro); // inspired by https://docs.astro.build/en/recipes/call-endpoints/
-		res = await clientA.api.searchAll.$get();
+		if (honoIntegrated_nAstroGet) {
+			const clientA = hc<tApiA>(target);
+			//const clientA = hc<tApiA>(Astro); // inspired by https://docs.astro.build/en/recipes/call-endpoints/
+			res = await clientA.api.searchAll.$get();
+		} else {
+			res = await GET({
+				...Astro,
+				params: { path: "api/searchAll" },
+			});
+		}
 	} else {
 		const url = `${target}/api/searchAll`;
 		res = await fetch(url);

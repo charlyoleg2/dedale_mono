@@ -7,15 +7,17 @@ const honoIntegrated = {
 	inClientNCors: false,
 	// inClientNFetch: true: hc<tApiA>(), false: fetch()
 	inClientNFetch: true,
+	// inClientNAstroGet: true: hc<tApiA>(), false: Astro-GET()
+	inClientNAstroGet: true,
 	// inServerNFetch: true: apiA.fetch, false: fetch(nA)
 	inServerNFetch: true,
 };
 // astroBuildMode = 'static'
-// inClientNCors, inClientNFetch, inServerNFetch
-// true, true, true : compile error: connection issue
-// false, true, true : works
-// false, false, true : works
-// false, false, false : compile error: immutable
+// inClientNCors, inClientNFetch, inClientNAstroGet, inServerNFetch
+// true, true, true, true : compile error: connection issue
+// false, true, true, true : works
+// false, false, true, true : works
+// false, false, true, false : compile error: immutable
 
 // As reminder, the svelteKit universal +page.ts-load() offer more options:
 // inClientCors, inServerFetch
