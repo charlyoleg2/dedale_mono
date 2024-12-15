@@ -10,26 +10,30 @@ const honoIntegrated = true; // true: no network call; false: hono must run duri
 // sub-function for writing url
 const base = import.meta.env.BASE_URL;
 const base2 = base === "/" ? "" : base;
-function stripBase(req: Request): Request {
-	const tUrl = new URL(req.url);
-	const tPath = tUrl.pathname;
+function stripBaseU(iUrl: string): URL {
+	const rUrl = new URL(iUrl);
+	const tPath = rUrl.pathname;
 	let nPath = tPath;
 	if (base2 !== "") {
 		nPath = tPath.replace(base2, "");
 	}
-	tUrl.pathname = nPath;
+	rUrl.pathname = nPath;
+	return rUrl;
+}
+function stripBaseR(req: Request): Request {
+	const tUrl = stripBaseU(req.url);
 	const rReq = new Request(tUrl, req);
 	return rReq;
 }
 
 const GETin: APIRoute = async ({ request }) =>
-	await apiA.fetch(stripBase(request));
+	await apiA.fetch(stripBaseR(request));
 //const POSTin: APIRoute = async ({ request }) => await apiA.fetch(request);
 //const PUTin: APIRoute = ({ request }) => apiA.fetch(request);
 
 const GETout: RequestHandler = async ({ request }) => {
 	//console.log(request);
-	const lurl = new URL(stripBase(request.url));
+	const lurl = stripBaseU(request.url);
 	const url = `${backCfg.nA_host}:${backCfg.nA_port}${lurl.pathname}${lurl.search}`;
 	//console.log(`dbg295: url: ${url}`);
 	return fetch(url);
