@@ -32,7 +32,7 @@ function stripBaseR(req: Request): Request {
 
 const GETin: APIRoute = async ({ request }) =>
 	await apiA.fetch(stripBaseR(request));
-	//await apiA.fetch(request);
+//await apiA.fetch(request);
 //const POSTin: APIRoute = async ({ request }) => await apiA.fetch(request);
 //const PUTin: APIRoute = ({ request }) => apiA.fetch(request);
 
