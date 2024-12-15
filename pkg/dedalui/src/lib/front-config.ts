@@ -15,7 +15,7 @@ const frontCfg = {
 // but prerender=true, ssr=true and inClientNCors=false works
 
 const honoIntegrated = {
-	// inClientNCors: true: hc<tApiA>(origin), hc<tApi>(nA)
+	// inClientNCors: true: hc<tApiA>(origin), false: hc<tApi>(nA)
 	inClientNCors: false,
 	// inClientNFetch: true: hc<tApiA>(), false: fetch()
 	inClientNFetch: true,
