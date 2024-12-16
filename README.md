@@ -16,7 +16,8 @@ The purpose of the project *Dedale* is to experiment different integrations of f
 2. nZ: a micro-service for other processing
 3. dedalui: the *svelte-kit* dynamic web-ui of *dedale*
 4. dedalep: the *svelte-kit* static pages of *dedale*
-5. back-config: the configuration of the backend
+5. dedalas: the *astro* static pages of *dedale*
+6. back-config: the configuration of the backend
 
 Below an example of a more distributed backend for a large application with many users:
 
@@ -30,9 +31,10 @@ Below an example of a more distributed backend for a large application with many
 8. nR4: the 4th micro-service for reading the data from persistent media
 9. dedalui: the *svelte-kit* dynamic web-ui of *dedale*
 10. dedalep: the *svelte-kit* static pages of *dedale*
-11. back-config: the configuration of the backend
+11. dedalas: the *astro* static pages of *dedale*
+12. back-config: the configuration of the backend
 
-A public instance of *dedalep* is available on that [github-page](https://charlyoleg2.github.io/dedale_mono/).
+A public instance of *dedalas* is available on [github-page](https://charlyoleg2.github.io/dedale_mono/).
 The *code source* is available on [github](https://github.com/charlyoleg2/dedale_mono).
 
 
@@ -41,7 +43,7 @@ Outcomes of experimentations
 
 ### SvelteKit / Hono
 
-Editing the file `pkg/dedalui/src/lib/front-config.ts`, let you expiriment the *prerender*, *ssr*, *csr* configurations.
+Editing the file `pkg/dedalui/src/lib/front-config.ts`, let you experiment the *prerender*, *ssr*, *csr* configurations.
 This front-end configuration provides up to 64 combinations.
 
 For getting a static website with *Sveltekit*, I see two limitations:
@@ -49,6 +51,15 @@ For getting a static website with *Sveltekit*, I see two limitations:
 - *Sveltekit-csr* must be set to false to avoid the hydratation. But then all *javascript* of client is gone!
 
 With *sveltekit v2.9.0*, I don't find a way to disable *hydratation* without removing the all *javascript* of client.
+
+
+### Astro / Hono
+
+Edit `pkg/dedalas/src/lib/front-config.t` for experimenting the 16 possible combinations.
+
+For getting a static website with *Astro*, I see two limitations:
+- Astro doesn't have an efficient way for calling one of its own endpoints without using the network-transport
+- Hono-hc calling the integrated Hono-api doesn't work in Astro context
 
 
 Prerequisite
