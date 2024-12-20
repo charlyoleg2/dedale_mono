@@ -22,30 +22,119 @@ const title = "URL Base";
 		<table>
 			<thead>
 				<tr>
-					<th class="first">original URL of href or src</th>
-					<th>Without base element</th>
-					<th>base='http://www.xyz.es/aaa/bbb/'</th>
-					<th>base='/aaa/bbb/'</th>
-					<th>base='aaa/bbb/ccc/ddd'</th>
+					<th>URL of href or src</th>
+					<th class="col2">Relative URL</th>
+					<th class="col3">Absolute URL</th>
+					<th class="col4">URL with domain</th>
+				</tr>
+				<tr>
+					<th class="col1">base element</th>
+					<th class="col2">user/martin.html</th>
+					<th class="col3">/user/martin.html</th>
+					<th class="col4">http://ijk.io/user/martin.html</th>
 				</tr>
 			</thead>
-			<tr>
-				<td class="first">user/martin.html</td>
-				<td><i>http://www.abc.fr/one/two/</i>user/martin.html</td>
-				<td>http://www.xyz.es/aaa/bbb/user/martin.html</td>
-				<td><i>http://www.abc.fr</i>/aaa/bbb/user/martin.html</td>
-				<td
-					><i>http://www.abc.fr/one/two/</i
-					>aaa/bbb/ccc/user/martin.html</td
-				>
-			</tr>
-			<tbody> </tbody>
+			<tbody>
+				<tr>
+					<td class="col1">Without base element</td>
+					<td class="col2"
+						><i>http://www.abc.fr/one/two/</i>user/martin.html</td
+					>
+					<td class="col3"
+						><i>http://www.abc.fr</i>/user/martin.html</td
+					>
+					<td class="col4">http://ijk.io/user/martin.html</td>
+				</tr>
+				<tr>
+					<td class="col1">base='http://xyz.es/aaa/bbb/'</td>
+					<td class="col2"
+						>http://www.xyz.es/aaa/bbb/user/martin.html</td
+					>
+					<td class="col3">http://www.xyz.es/user/martin.html</td>
+					<td class="col4">http://ijk.io/user/martin.html</td>
+				</tr>
+				<tr>
+					<td class="col1">base='/aaa/bbb/'</td>
+					<td class="col2"
+						><i>http://www.abc.fr</i>/aaa/bbb/user/martin.html</td
+					>
+					<td class="col3"
+						><i>http://www.abc.fr</i>/user/martin.html</td
+					>
+					<td class="col4">http://ijk.io/user/martin.html</td>
+				</tr>
+				<tr>
+					<td class="col1">base='aaa/bbb/ccc/ddd'</td>
+					<td class="col2"
+						><i>http://www.abc.fr/one/two/</i
+						>aaa/bbb/ccc/user/martin.html</td
+					>
+					<td class="col2"
+						><i>http://www.abc.fr</i>/user/martin.html</td
+					>
+					<td class="col4">http://ijk.io/user/martin.html</td>
+				</tr>
+			</tbody>
 		</table>
+		<h2>Observations</h2>
+		<ol>
+			<li>URL with domain are always unchanged</li>
+			<li>
+				<i>Base</i> only impacts the domain of an <i>absolute URL</i>
+			</li>
+			<li>string after the last slash of the base is ignored</li>
+			<li>
+				<i>base with empty string</i> or <i>base without slash</i> are equivalent
+				to <i>no base element</i>
+			</li>
+			<li><i>base not starting with slash</i> is a nonsense</li>
+		</ol>
+		<h2>Main rules</h2>
+		<ol>
+			<li>
+				Relative URL refers to the current page if <i>no base element</i
+				>
+			</li>
+			<li>
+				Relative URL refers to the <i>base</i> if <i
+					>base element exists</i
+				>
+			</li>
+			<li><i>base without domain</i> must start and end with slash</li>
+			<li>
+				All pages shall have the same <i>base</i> for easing the maintenance
+			</li>
+		</ol>
 	</article>
-</Layout>
 
-<style>
-	td.first {
-		bg-color: yellow;
-	}
-</style>
+	<style>
+		article {
+			margin-left: 2rem;
+		}
+		h1 {
+			font-size: 2rem;
+		}
+		h2 {
+			font-size: 1.6rem;
+		}
+		h3 {
+			font-size: 1.3rem;
+		}
+		th.col1,
+		td.col1 {
+			background-color: Linen;
+		}
+		th.col2,
+		td.col2 {
+			background-color: LightPink;
+		}
+		th.col3,
+		td.col3 {
+			background-color: LightSkyBlue;
+		}
+		th.col4,
+		td.col4 {
+			background-color: LightSteelBlue;
+		}
+	</style>
+</Layout>
