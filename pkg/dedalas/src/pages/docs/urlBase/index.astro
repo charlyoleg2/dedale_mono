@@ -1,0 +1,51 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+
+const title = "URL Base";
+---
+
+<Layout title={title}>
+	<article>
+		<h1>{title}</h1>
+
+		<h2>Motivation</h2>
+		The way <a href="https://developer.mozilla.org/en-US/docs/Web/API/URL"
+			>URL</a
+		> and <a
+			href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base"
+			>base</a
+		> work is not intuitive to me. I had to do experimentations for understanding
+		the logic. This page summarize the findings.
+
+		<h2>Use cases</h2>
+		When visiting the page <i>http://www.abc.fr/one/two/three.html</i>.
+		<table>
+			<thead>
+				<tr>
+					<th class="first">original URL of href or src</th>
+					<th>Without base element</th>
+					<th>base='http://www.xyz.es/aaa/bbb/'</th>
+					<th>base='/aaa/bbb/'</th>
+					<th>base='aaa/bbb/ccc/ddd'</th>
+				</tr>
+			</thead>
+			<tr>
+				<td class="first">user/martin.html</td>
+				<td><i>http://www.abc.fr/one/two/</i>user/martin.html</td>
+				<td>http://www.xyz.es/aaa/bbb/user/martin.html</td>
+				<td><i>http://www.abc.fr</i>/aaa/bbb/user/martin.html</td>
+				<td
+					><i>http://www.abc.fr/one/two/</i
+					>aaa/bbb/ccc/user/martin.html</td
+				>
+			</tr>
+			<tbody> </tbody>
+		</table>
+	</article>
+</Layout>
+
+<style>
+	td.first {
+		bg-color: yellow;
+	}
+</style>
