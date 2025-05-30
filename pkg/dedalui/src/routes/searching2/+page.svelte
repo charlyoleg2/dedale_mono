@@ -44,7 +44,7 @@
 	>
 </p>
 <ol>
-	{#each persons as item, idx}
+	{#each persons as item, idx (idx)}
 		<li><a href="{base}/user/{item}">{item} [{idx}]</a></li>
 	{/each}
 </ol>

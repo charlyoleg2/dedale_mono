@@ -5,7 +5,7 @@
 
 <h1>Searching page with dynamic content</h1>
 <ol>
-	{#each data.persons as item, idx}
+	{#each data.persons as item, idx (idx)}
 		<li>{item} [{idx}]</li>
 	{/each}
 </ol>

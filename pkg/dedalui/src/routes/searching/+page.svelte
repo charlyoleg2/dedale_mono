@@ -41,7 +41,7 @@
 <p>some letter <input type="text" bind:value={lettres} /></p>
 <ol>
 	{#await personsP then persons}
-		{#each persons as item, idx}
+		{#each persons as item, idx (idx)}
 			<li><a href="{base}/user/{item}">{item} [{idx}]</a></li>
 		{/each}
 	{/await}
