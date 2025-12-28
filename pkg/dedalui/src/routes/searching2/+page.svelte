@@ -2,7 +2,7 @@
 	import { honoIntegrated } from '$lib/front-config';
 	//import { backCfg } from 'back-config';
 
-	import { base } from '$app/paths';
+	import { resolve } from '$app/paths';
 	/** @type {{ data: import('./$types').PageData }} */
 	let { data } = $props();
 	const clientA = data.fClientA;
@@ -45,6 +45,6 @@
 </p>
 <ol>
 	{#each persons as item, idx (idx)}
-		<li><a href="{base}/user/{item}">{item} [{idx}]</a></li>
+		<li><a href={resolve(`/user/${item}`)}>{item} [{idx}]</a></li>
 	{/each}
 </ol>

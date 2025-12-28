@@ -1,5 +1,6 @@
 <script lang="ts">
 	import type { Snippet } from 'svelte';
+	import { resolve } from '$app/paths';
 
 	// props
 	interface Props {
@@ -9,7 +10,7 @@
 </script>
 
 <header>
-	<a href="/">dedalui-root</a>
+	<a href={resolve('/')}>dedalui-root</a>
 </header>
 <main>
 	{@render children?.()}

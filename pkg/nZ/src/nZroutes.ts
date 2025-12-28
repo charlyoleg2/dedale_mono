@@ -41,7 +41,7 @@ const rtGet_addi = createRoute({
 	method: 'get',
 	path: '/addi',
 	request: {
-		query: z.object({ num: z.number({ coerce: true }).int() })
+		query: z.object({ num: z.coerce.number().int() })
 	},
 	responses: {
 		200: {
