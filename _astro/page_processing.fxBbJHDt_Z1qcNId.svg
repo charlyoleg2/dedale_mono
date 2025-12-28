@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="413.63739"
+   height="198.30908"
+   viewBox="0 0 109.44156 52.469278"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4 (1:1.4+202410161351+e7c3feb100)"
+   sodipodi:docname="src_dedale.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     inkscape:zoom="1.1099334"
+     inkscape:cx="256.77216"
+     inkscape:cy="1611.3579"
+     inkscape:window-width="1854"
+     inkscape:window-height="1131"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1">
+    <inkscape:page
+       x="0"
+       y="0"
+       width="109.44156"
+       height="52.469276"
+       id="page2"
+       margin="0"
+       bleed="0" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1">
+    <rect
+       x="318.93805"
+       y="2259.595"
+       width="162.17189"
+       height="77.482124"
+       id="rect82" />
+    <rect
+       x="124.33178"
+       y="2261.397"
+       width="142.35088"
+       height="100.006"
+       id="rect81" />
+    <rect
+       x="101.80791"
+       y="2317.2561"
+       width="158.56807"
+       height="57.661118"
+       id="rect80" />
+    <rect
+       x="72.977348"
+       y="2187.5186"
+       width="190.10149"
+       height="72.977348"
+       id="rect79" />
+    <rect
+       x="273.89029"
+       y="2144.2727"
+       width="128.83656"
+       height="64.868759"
+       id="rect78" />
+    <rect
+       x="326.14569"
+       y="1980.299"
+       width="131.53941"
+       height="82.887856"
+       id="rect77" />
+    <rect
+       x="154.06329"
+       y="1982.101"
+       width="124.33178"
+       height="72.076393"
+       id="rect76" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-12.978479,-515.24017)">
+    <rect
+       style="fill:#ffffff;stroke:#ffffff;stroke-width:0.264583;stroke-linejoin:round"
+       id="rect84"
+       width="109.17698"
+       height="52.204659"
+       x="13.110771"
+       y="515.3725" />
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,8.9958338,13.758336)"
+       id="text75"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:14.6667px;line-height:normal;font-family:'Liberation Mono';-inkscape-font-specification:'Liberation Mono Bold';text-align:center;text-decoration-color:#000000;white-space:pre;shape-inside:url(#rect76);fill:#000000;stroke-width:1;-inkscape-stroke:none;stop-color:#000000"><tspan
+         x="203.02634"
+         y="1994.9626"
+         id="tspan1">SSR</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,-2.6458334,14.287503)"
+       id="text76"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:14.6667px;line-height:normal;font-family:'Liberation Mono';-inkscape-font-specification:'Liberation Mono Bold';text-align:center;text-decoration-color:#000000;white-space:pre;shape-inside:url(#rect77);fill:#000000;stroke-width:1;-inkscape-stroke:none;stop-color:#000000"><tspan
+         x="378.71384"
+         y="1993.1598"
+         id="tspan2">CSR</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,-22.760802,-15.366044)"
+       id="text77"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:14.6667px;line-height:normal;font-family:'Liberation Mono';-inkscape-font-specification:'Liberation Mono Bold';text-align:center;text-decoration-color:#000000;white-space:pre;shape-inside:url(#rect78);fill:#000000;stroke-width:1;-inkscape-stroke:none;stop-color:#000000"><tspan
+         x="325.10641"
+         y="2157.1344"
+         id="tspan3">SSG</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,-10.336432,-26.517382)"
+       id="text78"
+       style="font-size:14.6667px;line-height:normal;font-family:'Liberation Mono';-inkscape-font-specification:'Liberation Mono';text-align:center;text-decoration-color:#000000;white-space:pre;shape-inside:url(#rect79);fill:#000000;stroke-width:1;-inkscape-stroke:none;stop-color:#000000"><tspan
+         x="124.02008"
+         y="2200.5696"
+         id="tspan4">build time</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,-12.057488,-74.069461)"
+       id="text79"
+       style="font-size:14.6667px;line-height:normal;font-family:'Liberation Mono';-inkscape-font-specification:'Liberation Mono';text-align:center;text-decoration-color:#000000;white-space:pre;shape-inside:url(#rect80);fill:#000000;stroke-width:1;-inkscape-stroke:none;stop-color:#000000"><tspan
+         x="145.88599"
+         y="2330.306"
+         id="tspan5">run time</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,14.98401,-73.406739)"
+       id="text80"
+       style="font-size:14.6667px;line-height:normal;font-family:'Liberation Mono';-inkscape-font-specification:'Liberation Mono';text-align:center;text-decoration-color:#000000;white-space:pre;shape-inside:url(#rect81);fill:#000000;stroke-width:1;-inkscape-stroke:none;stop-color:#000000"><tspan
+         x="147.09982"
+         y="2274.4466"
+         id="tspan6">server side</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,-4.5004433,-72.877572)"
+       id="text81"
+       style="font-size:14.6667px;line-height:normal;font-family:'Liberation Mono';-inkscape-font-specification:'Liberation Mono';text-align:center;text-decoration-color:#000000;white-space:pre;shape-inside:url(#rect82);fill:#000000;stroke-width:1;-inkscape-stroke:none;stop-color:#000000"><tspan
+         x="351.61545"
+         y="2272.6458"
+         id="tspan7">client side</tspan></text>
+    <rect
+       style="fill:none;stroke:#808080;stroke-width:0.264583;stroke-linejoin:round"
+       id="rect83"
+       width="33.372875"
+       height="13.587526"
+       x="50.979038"
+       y="520.44458" />
+    <rect
+       style="fill:none;stroke:#808080;stroke-width:0.264583;stroke-linejoin:round"
+       id="rect83-6"
+       width="33.372875"
+       height="13.587526"
+       x="84.351913"
+       y="520.44458" />
+    <rect
+       style="fill:none;stroke:#808080;stroke-width:0.264583;stroke-linejoin:round"
+       id="rect83-5"
+       width="33.372875"
+       height="13.587526"
+       x="50.979038"
+       y="534.0321" />
+    <rect
+       style="fill:none;stroke:#808080;stroke-width:0.264583;stroke-linejoin:round"
+       id="rect83-6-0"
+       width="33.372875"
+       height="13.587526"
+       x="84.351921"
+       y="534.0321" />
+    <rect
+       style="fill:none;stroke:#808080;stroke-width:0.264583;stroke-linejoin:round"
+       id="rect83-1"
+       width="33.372875"
+       height="13.587526"
+       x="50.979038"
+       y="547.61963" />
+    <rect
+       style="fill:none;stroke:#808080;stroke-width:0.264583;stroke-linejoin:round"
+       id="rect83-6-7"
+       width="33.372875"
+       height="13.587526"
+       x="84.351906"
+       y="547.61963" />
+    <rect
+       style="fill:none;stroke:#808080;stroke-width:0.264583;stroke-linejoin:round"
+       id="rect83-5-2"
+       width="33.372875"
+       height="13.587526"
+       x="17.606155"
+       y="534.0321" />
+    <rect
+       style="fill:none;stroke:#808080;stroke-width:0.264583;stroke-linejoin:round"
+       id="rect83-1-6"
+       width="33.372875"
+       height="13.587526"
+       x="17.606155"
+       y="547.61963" />
+  </g>
+</svg>
