@@ -4,13 +4,13 @@
 
 	/** @type {{ data: import('./$types').PageData }} */
 	let { data } = $props();
-	const clientA = data.fClientA;
 
 	async function fnZaddi(iNum: number): Promise<string> {
 		let rMsg = 'dbg647: nZ is probablz not running!';
 		try {
 			let res: Response;
 			if (honoIntegrated.inClientNFetch) {
+				const clientA = data.fClientA;
 				res = await clientA.api.addi.$get({ query: { numa: iNum } });
 			} else {
 				const url =

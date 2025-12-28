@@ -5,7 +5,6 @@
 	import { resolve } from '$app/paths';
 	/** @type {{ data: import('./$types').PageData }} */
 	let { data } = $props();
-	const clientA = data.fClientA;
 
 	async function fetchSearch(iLetters: string): Promise<string[]> {
 		let rPersons: string[] = [];
@@ -13,6 +12,7 @@
 		try {
 			let res: Response;
 			if (honoIntegrated.inClientNFetch) {
+				const clientA = data.fClientA;
 				res = await clientA.api.search.$get({ query: { letters: iLetters } });
 			} else {
 				const url =
