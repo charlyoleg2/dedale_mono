@@ -1,12 +1,12 @@
 {
 	"compilerOptions": {
-		"target": "ESNext",
 		"module": "NodeNext",
+		"moduleResolution": "NodeNext",
+		"rootDir": "./src",
 		"outDir": "./build",
 		"declaration": true,
 		"sourceMap": true,
 		"strict": true,
-		"verbatimModuleSyntax": true,
 		"skipLibCheck": true,
 		"types": ["node"]
 	},

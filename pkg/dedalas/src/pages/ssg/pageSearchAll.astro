@@ -55,13 +55,11 @@ const persons = ["aaa", "bbb", "ccc"];
 	<article>
 		<h1>{title}</h1>
 		<ol>
-			{
-				persons.map((item, idx) => (
-					<li>
-						{item} [{idx}]
-					</li>
-				))
-			}
+			{persons.map((item, idx) => (
+				<li>
+					{item} [{idx}]
+				</li>
+			))}
 		</ol>
 	</article>
 </Layout>
