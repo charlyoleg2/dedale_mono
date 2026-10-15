@@ -14,13 +14,13 @@
 		"clean": "rimraf .astro dist node_modules"
 	},
 	"dependencies": {
-		"@astrojs/node": "^9.5.1",
-		"astro": "^5.16.6"
+		"@astrojs/node": "^9.5.5",
+		"astro": "^5.18.2"
 	},
 	"devDependencies": {
 		"npm-run-all2": "^8.0.4",
-		"prettier": "^3.7.4",
+		"prettier": "^3.9.10",
 		"prettier-plugin-astro": "^0.14.1",
-		"rimraf": "^6.1.2"
+		"rimraf": "^6.1.3"
 	}
 }
