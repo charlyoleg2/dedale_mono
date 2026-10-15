@@ -8,8 +8,8 @@
 
 <h2>Documentation</h2>
 <ol>
-	<li><a href={resolve('/docs/scalability')}>Software scalability</a></li>
-	<li><a href={asset('/docs/apidoc/')} rel="external">TypeDoc</a></li>
+	<li><a href={resolve('docs/scalability')}>Software scalability</a></li>
+	<li><a href={asset('docs/apidoc/')} rel="external">TypeDoc</a></li>
 </ol>
 
 <h2>Swagger UI</h2>
