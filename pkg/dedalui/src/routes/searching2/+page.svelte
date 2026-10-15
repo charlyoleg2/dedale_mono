@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { honoIntegrated } from '$lib/front-config';
+	import { honoIntegrated } from '#lib/front-config.js';
 	//import { backCfg } from 'back-config';
 
 	import { resolve } from '$app/paths';
@@ -45,6 +45,6 @@
 </p>
 <ol>
 	{#each persons as item, idx (idx)}
-		<li><a href={resolve(`/user/${item}`)}>{item} [{idx}]</a></li>
+		<li><a href={resolve(`user/${item}`)}>{item} [{idx}]</a></li>
 	{/each}
 </ol>

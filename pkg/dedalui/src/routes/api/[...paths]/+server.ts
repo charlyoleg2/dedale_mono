@@ -2,7 +2,7 @@
 import { backCfg } from 'back-config';
 import { apiA } from 'nA';
 import type { RequestHandler } from '@sveltejs/kit';
-import { honoIntegrated } from '$lib/front-config';
+import { honoIntegrated } from '#lib/front-config.js';
 
 const GETin: RequestHandler = async ({ request }) => await apiA.fetch(request);
 //const POSTin: RequestHandler = async ({ request }) => await apiA.fetch(request);

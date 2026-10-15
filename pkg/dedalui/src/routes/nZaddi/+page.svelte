@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { honoIntegrated } from '$lib/front-config';
+	import { honoIntegrated } from '#lib/front-config.js';
 	//import { backCfg } from 'back-config';
 
 	/** @type {{ data: import('./$types').PageData }} */

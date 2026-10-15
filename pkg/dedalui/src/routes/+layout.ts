@@ -1,6 +1,6 @@
 // +layout.ts [root]
 
-import { frontCfg } from '$lib/front-config';
+import { frontCfg } from '#lib/front-config.js';
 
 export const prerender = frontCfg.prerender; // default: false. if true, generate pages at build time and disable ssr-mode
 export const ssr = frontCfg.ssr; // default: true. if true, ssr-mode. if false, csr-mode

@@ -2,7 +2,7 @@
 import type { tApiA } from 'nA';
 import { hc } from 'hono/client';
 //import { preClientA } from 'nA';
-import { honoIntegrated } from '$lib/front-config';
+import { honoIntegrated } from '#lib/front-config.js';
 import { backCfg } from 'back-config';
 
 /** @type {import('./$types').PageLoad} */
