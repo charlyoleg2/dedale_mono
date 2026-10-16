@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="179.38907"
+   height="204.16531"
+   viewBox="0 0 47.463358 54.018739"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4 (1:1.4+202410161351+e7c3feb100)"
+   sodipodi:docname="src_dedale.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     inkscape:zoom="0.78484147"
+     inkscape:cx="396.25837"
+     inkscape:cy="561.25984"
+     inkscape:window-width="1854"
+     inkscape:window-height="1131"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1">
+    <inkscape:page
+       x="1.0730767e-16"
+       y="0"
+       width="47.46336"
+       height="54.018738"
+       id="page2"
+       margin="0"
+       bleed="0" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1">
+    <rect
+       x="236.05019"
+       y="205.86819"
+       width="158.56807"
+       height="48.12949"
+       id="rect5" />
+    <rect
+       x="149.46762"
+       y="335.60571"
+       width="65.410126"
+       height="36.038197"
+       id="rect4" />
+    <rect
+       x="123.43082"
+       y="248.21307"
+       width="105.41173"
+       height="62.16589"
+       id="rect3" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-28.473028,-31.095181)">
+    <rect
+       style="fill:#ffffff;stroke:#ffffff;stroke-width:0.264583;stroke-linejoin:round;stroke-dasharray:none"
+       id="rect6"
+       width="47.198772"
+       height="53.754158"
+       x="28.60532"
+       y="31.227472" />
+    <rect
+       style="fill:#afdde9;stroke:#2c89a0;stroke-width:0.264583;stroke-linejoin:round"
+       id="rect2"
+       width="22.765064"
+       height="15.494547"
+       x="31.704227"
+       y="33.849628" />
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,6.6745743,-26.698298)"
+       id="text2"
+       style="font-size:14.6667px;line-height:normal;font-family:'Liberation Mono';-inkscape-font-specification:'Liberation Mono';text-decoration-color:#000000;white-space:pre;shape-inside:url(#rect3);fill:#000000;stroke-width:1;-inkscape-stroke:none;stop-color:#000000"><tspan
+         x="123.43164"
+         y="261.26299"
+         id="tspan1">CPU</tspan></text>
+    <rect
+       style="fill:#afe9af;stroke:#2ca02c;stroke-width:0.264583;stroke-linejoin:round"
+       id="rect2-5"
+       width="22.765064"
+       height="15.494547"
+       x="31.380545"
+       y="67.335846" />
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,-0.63042214,-16.176509)"
+       id="text3"
+       style="font-size:14.6667px;line-height:normal;font-family:'Liberation Mono';-inkscape-font-specification:'Liberation Mono';text-decoration-color:#000000;white-space:pre;shape-inside:url(#rect4);fill:#000000;stroke-width:1;-inkscape-stroke:none;stop-color:#000000"><tspan
+         x="149.4668"
+         y="348.65557"
+         id="tspan2">RAM</tspan></text>
+    <path
+       style="fill:#ffdd55;stroke:#d4aa00;stroke-width:0.264583;stroke-linejoin:round;stroke-dasharray:none"
+       d="m 37.471413,54.635841 5.291664,-5.291669 5.291664,5.291669 v 0 H 45.40891 v 7.408339 h 2.645831 l -5.291664,5.291669 -5.291664,-5.291669 h 2.645834 v -7.408339 z"
+       id="path5" />
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,-12.395638,-0.9826334)"
+       id="text5"
+       style="font-size:14.6667px;line-height:normal;font-family:'Liberation Mono';-inkscape-font-specification:'Liberation Mono';text-decoration-color:#000000;white-space:pre;shape-inside:url(#rect5);fill:#000000;stroke-width:1;-inkscape-stroke:none;stop-color:#000000"><tspan
+         x="236.05078"
+         y="218.91924"
+         id="tspan3">memory
+</tspan><tspan
+         x="236.05078"
+         y="237.25262"
+         id="tspan4">interface</tspan></text>
+  </g>
+</svg>
